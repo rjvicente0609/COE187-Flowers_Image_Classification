@@ -1,0 +1,2819 @@
+Trivially needed symbols: sensor_register/162
+
+
+Initial Symbol table:
+
+snprintf/167 (snprintf) @06e16a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: dump_registers/144 
+  Calls: 
+printf/166 (printf) @06e169a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: dump_registers/144 
+  Calls: 
+MXC_Delay/165 (MXC_Delay) @06e16700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: reset/145 
+  Calls: 
+sccb_write_byt/164 (sccb_write_byt) @06dd27e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: reset/145 reset/145 sleep/146 write_reg/148 set_pixformat/149 set_pixformat/149 set_pixformat/149 set_pixformat/149 set_framesize/151 set_framesize/151 set_framesize/151 set_framesize/151 set_framesize/151 set_framesize/151 set_framesize/151 set_framesize/151 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_gainceiling/156 set_gainceiling/156 set_gainceiling/156 set_gainceiling/156 set_gainceiling/156 set_gainceiling/156 set_gainceiling/156 set_colorbar/157 set_hmirror/158 set_vflip/160 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 
+  Calls: 
+sccb_read_byt/163 (sccb_read_byt) @06dd2620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: get_product_id/142 get_product_id/142 get_manufacture_id/143 get_manufacture_id/143 dump_registers/144 reset/145 sleep/146 read_reg/147 set_gainceiling/156 set_colorbar/157 set_hmirror/158 set_vflip/160 get_luminance/161 get_luminance/161 get_luminance/161 
+  Calls: 
+sensor_register/162 (sensor_register) @06dd22a0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @019a7020
+  References: init/140 (addr) get_slave_address/141 (addr) get_product_id/142 (addr) get_manufacture_id/143 (addr) dump_registers/144 (addr) reset/145 (addr) sleep/146 (addr) read_reg/147 (addr) write_reg/148 (addr) set_pixformat/149 (addr) get_pixformat/150 (addr) set_framesize/151 (addr) set_windowing/152 (addr) set_contrast/153 (addr) set_brightness/154 (addr) set_saturation/155 (addr) set_gainceiling/156 (addr) set_colorbar/157 (addr) set_hmirror/158 (addr) set_vflip/160 (addr) set_negateimage/159 (addr) get_luminance/161 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+get_luminance/161 (get_luminance) @06dd20e0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06dc79a0
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_read_byt/163 sccb_read_byt/163 sccb_read_byt/163 
+set_vflip/160 (set_vflip) @06dc7c40
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06dc77e0
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_read_byt/163 
+set_negateimage/159 (set_negateimage) @06dc79a0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06dc7c40
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 
+set_hmirror/158 (set_hmirror) @06dc77e0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06dc7540
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_read_byt/163 
+set_colorbar/157 (set_colorbar) @06dc7540
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06dc72a0
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_read_byt/163 
+set_gainceiling/156 (set_gainceiling) @06dc72a0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06dc7000
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_read_byt/163 
+set_saturation/155 (set_saturation) @06dc7000
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06dc1e00
+  References: 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+set_brightness/154 (set_brightness) @06dc1e00
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06dc1c40
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 
+set_contrast/153 (set_contrast) @06dc1c40
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06dc1a80
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 
+set_windowing/152 (set_windowing) @06dc1a80
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06dc11c0
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 
+set_framesize/151 (set_framesize) @06dc11c0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06db4c40
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 
+get_pixformat/150 (get_pixformat) @06db4c40
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06db4a80
+  References: g_pixelformat/138 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+set_pixformat/149 (set_pixformat) @06db4a80
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06db4540
+  References: g_pixelformat/138 (write) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 
+write_reg/148 (write_reg) @06db4540
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06db4380
+  References: g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 
+read_reg/147 (read_reg) @06db4380
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06db41c0
+  References: g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_read_byt/163 
+sleep/146 (sleep) @06db41c0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06dafee0
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_read_byt/163 
+reset/145 (reset) @06dafee0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06dafa80
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) default_regs/139 (read) default_regs/139 (read) default_regs/139 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 MXC_Delay/165 sccb_read_byt/163 sccb_write_byt/164 
+dump_registers/144 (dump_registers) @06dafa80
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06daf8c0
+  References: g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: snprintf/167 sccb_read_byt/163 printf/166 
+get_manufacture_id/143 (get_manufacture_id) @06daf8c0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06daf540
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_read_byt/163 sccb_read_byt/163 
+get_product_id/142 (get_product_id) @06daf540
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06daf1c0
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_read_byt/163 sccb_read_byt/163 
+get_slave_address/141 (get_slave_address) @06daf1c0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06daf000
+  References: g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+init/140 (init) @06daf000
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @019a7020
+  References: g_slv_addr/137 (write) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+default_regs/139 (default_regs) @06d6eab0
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @06dafa80
+  References: 
+  Referring: reset/145 (read) reset/145 (read) reset/145 (read) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_pixelformat/138 (g_pixelformat) @06d6ea20
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @06db4a80
+  References: 
+  Referring: get_pixformat/150 (read) set_pixformat/149 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_slv_addr/137 (g_slv_addr) @06d6e9d8
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @06dc79a0
+  References: 
+  Referring: get_luminance/161 (read) get_luminance/161 (read) get_luminance/161 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_vflip/160 (read) set_vflip/160 (read) set_hmirror/158 (read) set_hmirror/158 (read) set_colorbar/157 (read) set_colorbar/157 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_framesize/151 (read) set_framesize/151 (read) set_framesize/151 (read) set_framesize/151 (read) set_framesize/151 (read) set_framesize/151 (read) set_framesize/151 (read) set_framesize/151 (read) set_pixformat/149 (read) set_pixformat/149 (read) set_pixformat/149 (read) set_pixformat/149 (read) write_reg/148 (read) read_reg/147 (read) sleep/146 (read) sleep/146 (read) reset/145 (read) reset/145 (read) reset/145 (read) dump_registers/144 (read) get_manufacture_id/143 (read) get_manufacture_id/143 (read) get_product_id/142 (read) get_product_id/142 (read) get_slave_address/141 (read) init/140 (write) init/140 (read) 
+  Availability: not-ready
+  Varpool flags:
+ITM_CheckChar/136 (ITM_CheckChar) @06d51a80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_ReceiveChar/135 (ITM_ReceiveChar) @06d518c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_SendChar/134 (ITM_SendChar) @06d51700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SysTick_Config/133 (SysTick_Config) @06d51380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SCB_GetFPUType/132 (SCB_GetFPUType) @06d511c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Load/131 (ARM_MPU_Load) @06d51000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_OrderedMemcpy/130 (ARM_MPU_OrderedMemcpy) @06d47e00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegionEx/129 (ARM_MPU_SetRegionEx) @06d47c40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegion/128 (ARM_MPU_SetRegion) @06d47a80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_ClrRegion/127 (ARM_MPU_ClrRegion) @06d478c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Disable/126 (ARM_MPU_Disable) @06d47700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Enable/125 (ARM_MPU_Enable) @06d47540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SystemReset/124 (__NVIC_SystemReset) @06d40d20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetVector/123 (__NVIC_GetVector) @06d40b60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetVector/122 (__NVIC_SetVector) @06d409a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_DecodePriority/121 (NVIC_DecodePriority) @06d407e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_EncodePriority/120 (NVIC_EncodePriority) @06d40620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriority/119 (__NVIC_GetPriority) @06d40460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriority/118 (__NVIC_SetPriority) @06d402a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetActive/117 (__NVIC_GetActive) @06d400e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_ClearPendingIRQ/116 (__NVIC_ClearPendingIRQ) @06d36ee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPendingIRQ/115 (__NVIC_SetPendingIRQ) @06d36d20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPendingIRQ/114 (__NVIC_GetPendingIRQ) @06d36b60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_DisableIRQ/113 (__NVIC_DisableIRQ) @06d369a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetEnableIRQ/112 (__NVIC_GetEnableIRQ) @06d367e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_EnableIRQ/111 (__NVIC_EnableIRQ) @06d36620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriorityGrouping/110 (__NVIC_GetPriorityGrouping) @06d36460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriorityGrouping/109 (__NVIC_SetPriorityGrouping) @06d362a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMMLA/108 (__SMMLA) @06cf3540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB/107 (__QSUB) @06cf32a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD/106 (__QADD) @06cf30e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SEL/105 (__SEL) @06ceaee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSLDX/104 (__SMLSLDX) @06cead20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSLD/103 (__SMLSLD) @06ceab60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSDX/102 (__SMLSDX) @06cea9a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSD/101 (__SMLSD) @06cea7e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUSDX/100 (__SMUSDX) @06cea620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUSD/99 (__SMUSD) @06cea460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLALDX/98 (__SMLALDX) @06cea2a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLALD/97 (__SMLALD) @06cea0e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLADX/96 (__SMLADX) @06ce6ee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLAD/95 (__SMLAD) @06ce6d20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUADX/94 (__SMUADX) @06ce6b60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUAD/93 (__SMUAD) @06ce69a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTAB16_RORn/92 (__SXTAB16_RORn) @06ce67e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTAB16/91 (__SXTAB16) @06ce6620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTB16_RORn/90 (__SXTB16_RORn) @06ce6460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTB16/89 (__SXTB16) @06ce62a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UXTAB16/88 (__UXTAB16) @06ce60e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UXTB16/87 (__UXTB16) @06ce0ee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USADA8/86 (__USADA8) @06ce0b60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USAD8/85 (__USAD8) @06ce09a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSAX/84 (__UHSAX) @06ce07e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSAX/83 (__UQSAX) @06ce0620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USAX/82 (__USAX) @06ce0460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSAX/81 (__SHSAX) @06ce02a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSAX/80 (__QSAX) @06ce00e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSAX/79 (__SSAX) @06cdaee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHASX/78 (__UHASX) @06cdad20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQASX/77 (__UQASX) @06cdab60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UASX/76 (__UASX) @06cda9a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHASX/75 (__SHASX) @06cda7e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QASX/74 (__QASX) @06cda620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SASX/73 (__SASX) @06cda460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSUB16/72 (__UHSUB16) @06cda2a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSUB16/71 (__UQSUB16) @06cda0e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USUB16/70 (__USUB16) @06cd6ee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSUB16/69 (__SHSUB16) @06cd6d20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB16/68 (__QSUB16) @06cd6b60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSUB16/67 (__SSUB16) @06cd69a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHADD16/66 (__UHADD16) @06cd67e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQADD16/65 (__UQADD16) @06cd6620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UADD16/64 (__UADD16) @06cd6460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHADD16/63 (__SHADD16) @06cd62a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD16/62 (__QADD16) @06cd60e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SADD16/61 (__SADD16) @06cd0ee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSUB8/60 (__UHSUB8) @06cd0d20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSUB8/59 (__UQSUB8) @06cd0b60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USUB8/58 (__USUB8) @06cd09a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSUB8/57 (__SHSUB8) @06cd07e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB8/56 (__QSUB8) @06cd0620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSUB8/55 (__SSUB8) @06cd0460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHADD8/54 (__UHADD8) @06cd02a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQADD8/53 (__UQADD8) @06cd00e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UADD8/52 (__UADD8) @06ccbee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHADD8/51 (__SHADD8) @06ccbd20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD8/50 (__QADD8) @06ccbb60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SADD8/49 (__SADD8) @06ccb9a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FPSCR/48 (__set_FPSCR) @06ccb7e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FPSCR/47 (__get_FPSCR) @06ccb620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FAULTMASK/46 (__set_FAULTMASK) @06ccb460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FAULTMASK/45 (__get_FAULTMASK) @06ccb2a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI_MAX/44 (__set_BASEPRI_MAX) @06ccb0e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI/43 (__set_BASEPRI) @06cc7ee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_BASEPRI/42 (__get_BASEPRI) @06cc7d20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_fault_irq/41 (__disable_fault_irq) @06cc7b60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_fault_irq/40 (__enable_fault_irq) @06cc79a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PRIMASK/39 (__set_PRIMASK) @06cc77e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PRIMASK/38 (__get_PRIMASK) @06cc7620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_MSP/37 (__set_MSP) @06cc7460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_MSP/36 (__get_MSP) @06cc72a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PSP/35 (__set_PSP) @06cc70e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PSP/34 (__get_PSP) @06cc5ee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_xPSR/33 (__get_xPSR) @06cc5d20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_APSR/32 (__get_APSR) @06cc5b60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_IPSR/31 (__get_IPSR) @06cc59a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_CONTROL/30 (__set_CONTROL) @06cc57e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_CONTROL/29 (__get_CONTROL) @06cc5620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_irq/28 (__disable_irq) @06cc5460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_irq/27 (__enable_irq) @06cc52a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRT/26 (__STRT) @06cc50e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRHT/25 (__STRHT) @06cbfee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRBT/24 (__STRBT) @06cbfd20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRT/23 (__LDRT) @06cbfb60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRHT/22 (__LDRHT) @06cbf9a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRBT/21 (__LDRBT) @06cbf7e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RRX/20 (__RRX) @06cbf620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLREX/19 (__CLREX) @06cbf2a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXW/18 (__STREXW) @06cbf0e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXH/17 (__STREXH) @06cbaee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXB/16 (__STREXB) @06cbad20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXW/15 (__LDREXW) @06cbab60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXH/14 (__LDREXH) @06cba9a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXB/13 (__LDREXB) @06cba7e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLZ/12 (__CLZ) @06cba620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RBIT/11 (__RBIT) @06cba460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ROR/10 (__ROR) @06cba2a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REVSH/9 (__REVSH) @06cba0e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV16/8 (__REV16) @06cb1ee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV/7 (__REV) @06cb1d20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DMB/6 (__DMB) @06cb1b60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DSB/5 (__DSB) @06cb19a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ISB/4 (__ISB) @06cb17e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__cmsis_start/3 (__cmsis_start) @06cb1380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_putchar_unlocked/2 (_putchar_unlocked) @06b5da80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_getchar_unlocked/1 (_getchar_unlocked) @06b5d8c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__sputc_r/0 (__sputc_r) @06b5d540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+
+Removing unused symbols: ITM_CheckChar/136 ITM_ReceiveChar/135 ITM_SendChar/134 SysTick_Config/133 SCB_GetFPUType/132 ARM_MPU_Load/131 ARM_MPU_OrderedMemcpy/130 ARM_MPU_SetRegionEx/129 ARM_MPU_SetRegion/128 ARM_MPU_ClrRegion/127 ARM_MPU_Disable/126 ARM_MPU_Enable/125 __NVIC_SystemReset/124 __NVIC_GetVector/123 __NVIC_SetVector/122 NVIC_DecodePriority/121 NVIC_EncodePriority/120 __NVIC_GetPriority/119 __NVIC_SetPriority/118 __NVIC_GetActive/117 __NVIC_ClearPendingIRQ/116 __NVIC_SetPendingIRQ/115 __NVIC_GetPendingIRQ/114 __NVIC_DisableIRQ/113 __NVIC_GetEnableIRQ/112 __NVIC_EnableIRQ/111 __NVIC_GetPriorityGrouping/110 __NVIC_SetPriorityGrouping/109 __SMMLA/108 __QSUB/107 __QADD/106 __SEL/105 __SMLSLDX/104 __SMLSLD/103 __SMLSDX/102 __SMLSD/101 __SMUSDX/100 __SMUSD/99 __SMLALDX/98 __SMLALD/97 __SMLADX/96 __SMLAD/95 __SMUADX/94 __SMUAD/93 __SXTAB16_RORn/92 __SXTAB16/91 __SXTB16_RORn/90 __SXTB16/89 __UXTAB16/88 __UXTB16/87 __USADA8/86 __USAD8/85 __UHSAX/84 __UQSAX/83 __USAX/82 __SHSAX/81 __QSAX/80 __SSAX/79 __UHASX/78 __UQASX/77 __UASX/76 __SHASX/75 __QASX/74 __SASX/73 __UHSUB16/72 __UQSUB16/71 __USUB16/70 __SHSUB16/69 __QSUB16/68 __SSUB16/67 __UHADD16/66 __UQADD16/65 __UADD16/64 __SHADD16/63 __QADD16/62 __SADD16/61 __UHSUB8/60 __UQSUB8/59 __USUB8/58 __SHSUB8/57 __QSUB8/56 __SSUB8/55 __UHADD8/54 __UQADD8/53 __UADD8/52 __SHADD8/51 __QADD8/50 __SADD8/49 __set_FPSCR/48 __get_FPSCR/47 __set_FAULTMASK/46 __get_FAULTMASK/45 __set_BASEPRI_MAX/44 __set_BASEPRI/43 __get_BASEPRI/42 __disable_fault_irq/41 __enable_fault_irq/40 __set_PRIMASK/39 __get_PRIMASK/38 __set_MSP/37 __get_MSP/36 __set_PSP/35 __get_PSP/34 __get_xPSR/33 __get_APSR/32 __get_IPSR/31 __set_CONTROL/30 __get_CONTROL/29 __disable_irq/28 __enable_irq/27 __STRT/26 __STRHT/25 __STRBT/24 __LDRT/23 __LDRHT/22 __LDRBT/21 __RRX/20 __CLREX/19 __STREXW/18 __STREXH/17 __STREXB/16 __LDREXW/15 __LDREXH/14 __LDREXB/13 __CLZ/12 __RBIT/11 __ROR/10 __REVSH/9 __REV16/8 __REV/7 __DMB/6 __DSB/5 __ISB/4 __cmsis_start/3 _putchar_unlocked/2 _getchar_unlocked/1 __sputc_r/0
+
+Reclaimed Symbol table:
+
+snprintf/167 (snprintf) @06e16a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: dump_registers/144 
+  Calls: 
+printf/166 (printf) @06e169a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: dump_registers/144 
+  Calls: 
+MXC_Delay/165 (MXC_Delay) @06e16700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: reset/145 
+  Calls: 
+sccb_write_byt/164 (sccb_write_byt) @06dd27e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: reset/145 reset/145 sleep/146 write_reg/148 set_pixformat/149 set_pixformat/149 set_pixformat/149 set_pixformat/149 set_framesize/151 set_framesize/151 set_framesize/151 set_framesize/151 set_framesize/151 set_framesize/151 set_framesize/151 set_framesize/151 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_gainceiling/156 set_gainceiling/156 set_gainceiling/156 set_gainceiling/156 set_gainceiling/156 set_gainceiling/156 set_gainceiling/156 set_colorbar/157 set_hmirror/158 set_vflip/160 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 
+  Calls: 
+sccb_read_byt/163 (sccb_read_byt) @06dd2620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: get_product_id/142 get_product_id/142 get_manufacture_id/143 get_manufacture_id/143 dump_registers/144 reset/145 sleep/146 read_reg/147 set_gainceiling/156 set_colorbar/157 set_hmirror/158 set_vflip/160 get_luminance/161 get_luminance/161 get_luminance/161 
+  Calls: 
+sensor_register/162 (sensor_register) @06dd22a0
+  Type: function definition analyzed
+  Visibility: public
+  References: init/140 (addr) get_slave_address/141 (addr) get_product_id/142 (addr) get_manufacture_id/143 (addr) dump_registers/144 (addr) reset/145 (addr) sleep/146 (addr) read_reg/147 (addr) write_reg/148 (addr) set_pixformat/149 (addr) get_pixformat/150 (addr) set_framesize/151 (addr) set_windowing/152 (addr) set_contrast/153 (addr) set_brightness/154 (addr) set_saturation/155 (addr) set_gainceiling/156 (addr) set_colorbar/157 (addr) set_hmirror/158 (addr) set_vflip/160 (addr) set_negateimage/159 (addr) get_luminance/161 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+get_luminance/161 (get_luminance) @06dd20e0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_read_byt/163 sccb_read_byt/163 sccb_read_byt/163 
+set_vflip/160 (set_vflip) @06dc7c40
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_read_byt/163 
+set_negateimage/159 (set_negateimage) @06dc79a0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 
+set_hmirror/158 (set_hmirror) @06dc77e0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_read_byt/163 
+set_colorbar/157 (set_colorbar) @06dc7540
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_read_byt/163 
+set_gainceiling/156 (set_gainceiling) @06dc72a0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_read_byt/163 
+set_saturation/155 (set_saturation) @06dc7000
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+set_brightness/154 (set_brightness) @06dc1e00
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 
+set_contrast/153 (set_contrast) @06dc1c40
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 
+set_windowing/152 (set_windowing) @06dc1a80
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 
+set_framesize/151 (set_framesize) @06dc11c0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 
+get_pixformat/150 (get_pixformat) @06db4c40
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_pixelformat/138 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+set_pixformat/149 (set_pixformat) @06db4a80
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_pixelformat/138 (write) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 
+write_reg/148 (write_reg) @06db4540
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 
+read_reg/147 (read_reg) @06db4380
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_read_byt/163 
+sleep/146 (sleep) @06db41c0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_read_byt/163 
+reset/145 (reset) @06dafee0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) default_regs/139 (read) default_regs/139 (read) default_regs/139 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 MXC_Delay/165 sccb_read_byt/163 sccb_write_byt/164 
+dump_registers/144 (dump_registers) @06dafa80
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: snprintf/167 sccb_read_byt/163 printf/166 
+get_manufacture_id/143 (get_manufacture_id) @06daf8c0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_read_byt/163 sccb_read_byt/163 
+get_product_id/142 (get_product_id) @06daf540
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_read_byt/163 sccb_read_byt/163 
+get_slave_address/141 (get_slave_address) @06daf1c0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+init/140 (init) @06daf000
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (write) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+default_regs/139 (default_regs) @06d6eab0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: reset/145 (read) reset/145 (read) reset/145 (read) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_pixelformat/138 (g_pixelformat) @06d6ea20
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: get_pixformat/150 (read) set_pixformat/149 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_slv_addr/137 (g_slv_addr) @06d6e9d8
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: get_luminance/161 (read) get_luminance/161 (read) get_luminance/161 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_vflip/160 (read) set_vflip/160 (read) set_hmirror/158 (read) set_hmirror/158 (read) set_colorbar/157 (read) set_colorbar/157 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_framesize/151 (read) set_framesize/151 (read) set_framesize/151 (read) set_framesize/151 (read) set_framesize/151 (read) set_framesize/151 (read) set_framesize/151 (read) set_framesize/151 (read) set_pixformat/149 (read) set_pixformat/149 (read) set_pixformat/149 (read) set_pixformat/149 (read) write_reg/148 (read) read_reg/147 (read) sleep/146 (read) sleep/146 (read) reset/145 (read) reset/145 (read) reset/145 (read) dump_registers/144 (read) get_manufacture_id/143 (read) get_manufacture_id/143 (read) get_product_id/142 (read) get_product_id/142 (read) get_slave_address/141 (read) init/140 (write) init/140 (read) 
+  Availability: not-ready
+  Varpool flags:
+
+
+Initial Symbol table:
+
+snprintf/167 (snprintf) @06e16a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: dump_registers/144 
+  Calls: 
+printf/166 (printf) @06e169a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: dump_registers/144 
+  Calls: 
+MXC_Delay/165 (MXC_Delay) @06e16700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: reset/145 
+  Calls: 
+sccb_write_byt/164 (sccb_write_byt) @06dd27e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: reset/145 reset/145 sleep/146 write_reg/148 set_pixformat/149 set_pixformat/149 set_pixformat/149 set_pixformat/149 set_framesize/151 set_framesize/151 set_framesize/151 set_framesize/151 set_framesize/151 set_framesize/151 set_framesize/151 set_framesize/151 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_gainceiling/156 set_gainceiling/156 set_gainceiling/156 set_gainceiling/156 set_gainceiling/156 set_gainceiling/156 set_gainceiling/156 set_colorbar/157 set_hmirror/158 set_vflip/160 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 
+  Calls: 
+sccb_read_byt/163 (sccb_read_byt) @06dd2620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: get_product_id/142 get_product_id/142 get_manufacture_id/143 get_manufacture_id/143 dump_registers/144 reset/145 sleep/146 read_reg/147 set_gainceiling/156 set_colorbar/157 set_hmirror/158 set_vflip/160 get_luminance/161 get_luminance/161 get_luminance/161 
+  Calls: 
+sensor_register/162 (sensor_register) @06dd22a0
+  Type: function definition analyzed
+  Visibility: public
+  References: init/140 (addr) get_slave_address/141 (addr) get_product_id/142 (addr) get_manufacture_id/143 (addr) dump_registers/144 (addr) reset/145 (addr) sleep/146 (addr) read_reg/147 (addr) write_reg/148 (addr) set_pixformat/149 (addr) get_pixformat/150 (addr) set_framesize/151 (addr) set_windowing/152 (addr) set_contrast/153 (addr) set_brightness/154 (addr) set_saturation/155 (addr) set_gainceiling/156 (addr) set_colorbar/157 (addr) set_hmirror/158 (addr) set_vflip/160 (addr) set_negateimage/159 (addr) get_luminance/161 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+get_luminance/161 (get_luminance) @06dd20e0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_read_byt/163 sccb_read_byt/163 sccb_read_byt/163 
+set_vflip/160 (set_vflip) @06dc7c40
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_read_byt/163 
+set_negateimage/159 (set_negateimage) @06dc79a0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 
+set_hmirror/158 (set_hmirror) @06dc77e0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_read_byt/163 
+set_colorbar/157 (set_colorbar) @06dc7540
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_read_byt/163 
+set_gainceiling/156 (set_gainceiling) @06dc72a0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_read_byt/163 
+set_saturation/155 (set_saturation) @06dc7000
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+set_brightness/154 (set_brightness) @06dc1e00
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 
+set_contrast/153 (set_contrast) @06dc1c40
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 
+set_windowing/152 (set_windowing) @06dc1a80
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 
+set_framesize/151 (set_framesize) @06dc11c0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 
+get_pixformat/150 (get_pixformat) @06db4c40
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_pixelformat/138 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+set_pixformat/149 (set_pixformat) @06db4a80
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_pixelformat/138 (write) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 
+write_reg/148 (write_reg) @06db4540
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 
+read_reg/147 (read_reg) @06db4380
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_read_byt/163 
+sleep/146 (sleep) @06db41c0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_read_byt/163 
+reset/145 (reset) @06dafee0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) default_regs/139 (read) default_regs/139 (read) default_regs/139 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 MXC_Delay/165 sccb_read_byt/163 sccb_write_byt/164 
+dump_registers/144 (dump_registers) @06dafa80
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: snprintf/167 sccb_read_byt/163 printf/166 
+get_manufacture_id/143 (get_manufacture_id) @06daf8c0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_read_byt/163 sccb_read_byt/163 
+get_product_id/142 (get_product_id) @06daf540
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_read_byt/163 sccb_read_byt/163 
+get_slave_address/141 (get_slave_address) @06daf1c0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+init/140 (init) @06daf000
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (write) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+default_regs/139 (default_regs) @06d6eab0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: reset/145 (read) reset/145 (read) reset/145 (read) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_pixelformat/138 (g_pixelformat) @06d6ea20
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: get_pixformat/150 (read) set_pixformat/149 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_slv_addr/137 (g_slv_addr) @06d6e9d8
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: get_luminance/161 (read) get_luminance/161 (read) get_luminance/161 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_vflip/160 (read) set_vflip/160 (read) set_hmirror/158 (read) set_hmirror/158 (read) set_colorbar/157 (read) set_colorbar/157 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_framesize/151 (read) set_framesize/151 (read) set_framesize/151 (read) set_framesize/151 (read) set_framesize/151 (read) set_framesize/151 (read) set_framesize/151 (read) set_framesize/151 (read) set_pixformat/149 (read) set_pixformat/149 (read) set_pixformat/149 (read) set_pixformat/149 (read) write_reg/148 (read) read_reg/147 (read) sleep/146 (read) sleep/146 (read) reset/145 (read) reset/145 (read) reset/145 (read) dump_registers/144 (read) get_manufacture_id/143 (read) get_manufacture_id/143 (read) get_product_id/142 (read) get_product_id/142 (read) get_slave_address/141 (read) init/140 (write) init/140 (read) 
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+snprintf/167 (snprintf) @06e16a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: dump_registers/144 
+  Calls: 
+printf/166 (printf) @06e169a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: dump_registers/144 
+  Calls: 
+MXC_Delay/165 (MXC_Delay) @06e16700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: reset/145 
+  Calls: 
+sccb_write_byt/164 (sccb_write_byt) @06dd27e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: reset/145 reset/145 sleep/146 write_reg/148 set_pixformat/149 set_pixformat/149 set_pixformat/149 set_pixformat/149 set_framesize/151 set_framesize/151 set_framesize/151 set_framesize/151 set_framesize/151 set_framesize/151 set_framesize/151 set_framesize/151 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_windowing/152 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_contrast/153 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_brightness/154 set_gainceiling/156 set_gainceiling/156 set_gainceiling/156 set_gainceiling/156 set_gainceiling/156 set_gainceiling/156 set_gainceiling/156 set_colorbar/157 set_hmirror/158 set_vflip/160 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 set_negateimage/159 
+  Calls: 
+sccb_read_byt/163 (sccb_read_byt) @06dd2620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: get_product_id/142 get_product_id/142 get_manufacture_id/143 get_manufacture_id/143 dump_registers/144 reset/145 sleep/146 read_reg/147 set_gainceiling/156 set_colorbar/157 set_hmirror/158 set_vflip/160 get_luminance/161 get_luminance/161 get_luminance/161 
+  Calls: 
+sensor_register/162 (sensor_register) @06dd22a0
+  Type: function definition analyzed
+  Visibility: public
+  References: init/140 (addr) get_slave_address/141 (addr) get_product_id/142 (addr) get_manufacture_id/143 (addr) dump_registers/144 (addr) reset/145 (addr) sleep/146 (addr) read_reg/147 (addr) write_reg/148 (addr) set_pixformat/149 (addr) get_pixformat/150 (addr) set_framesize/151 (addr) set_windowing/152 (addr) set_contrast/153 (addr) set_brightness/154 (addr) set_saturation/155 (addr) set_gainceiling/156 (addr) set_colorbar/157 (addr) set_hmirror/158 (addr) set_vflip/160 (addr) set_negateimage/159 (addr) get_luminance/161 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+get_luminance/161 (get_luminance) @06dd20e0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_read_byt/163 sccb_read_byt/163 sccb_read_byt/163 
+set_vflip/160 (set_vflip) @06dc7c40
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_read_byt/163 
+set_negateimage/159 (set_negateimage) @06dc79a0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 
+set_hmirror/158 (set_hmirror) @06dc77e0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_read_byt/163 
+set_colorbar/157 (set_colorbar) @06dc7540
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_read_byt/163 
+set_gainceiling/156 (set_gainceiling) @06dc72a0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_read_byt/163 
+set_saturation/155 (set_saturation) @06dc7000
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+set_brightness/154 (set_brightness) @06dc1e00
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 
+set_contrast/153 (set_contrast) @06dc1c40
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 
+set_windowing/152 (set_windowing) @06dc1a80
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 
+set_framesize/151 (set_framesize) @06dc11c0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 
+get_pixformat/150 (get_pixformat) @06db4c40
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_pixelformat/138 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+set_pixformat/149 (set_pixformat) @06db4a80
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_pixelformat/138 (write) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 sccb_write_byt/164 
+write_reg/148 (write_reg) @06db4540
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 
+read_reg/147 (read_reg) @06db4380
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_read_byt/163 
+sleep/146 (sleep) @06db41c0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 sccb_read_byt/163 
+reset/145 (reset) @06dafee0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) default_regs/139 (read) default_regs/139 (read) default_regs/139 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_write_byt/164 MXC_Delay/165 sccb_read_byt/163 sccb_write_byt/164 
+dump_registers/144 (dump_registers) @06dafa80
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: snprintf/167 sccb_read_byt/163 printf/166 
+get_manufacture_id/143 (get_manufacture_id) @06daf8c0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_read_byt/163 sccb_read_byt/163 
+get_product_id/142 (get_product_id) @06daf540
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: sccb_read_byt/163 sccb_read_byt/163 
+get_slave_address/141 (get_slave_address) @06daf1c0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+init/140 (init) @06daf000
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: g_slv_addr/137 (write) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+default_regs/139 (default_regs) @06d6eab0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: reset/145 (read) reset/145 (read) reset/145 (read) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+g_pixelformat/138 (g_pixelformat) @06d6ea20
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: get_pixformat/150 (read) set_pixformat/149 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+g_slv_addr/137 (g_slv_addr) @06d6e9d8
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: get_luminance/161 (read) get_luminance/161 (read) get_luminance/161 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_vflip/160 (read) set_vflip/160 (read) set_hmirror/158 (read) set_hmirror/158 (read) set_colorbar/157 (read) set_colorbar/157 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_framesize/151 (read) set_framesize/151 (read) set_framesize/151 (read) set_framesize/151 (read) set_framesize/151 (read) set_framesize/151 (read) set_framesize/151 (read) set_framesize/151 (read) set_pixformat/149 (read) set_pixformat/149 (read) set_pixformat/149 (read) set_pixformat/149 (read) write_reg/148 (read) read_reg/147 (read) sleep/146 (read) sleep/146 (read) reset/145 (read) reset/145 (read) reset/145 (read) dump_registers/144 (read) get_manufacture_id/143 (read) get_manufacture_id/143 (read) get_product_id/142 (read) get_product_id/142 (read) get_slave_address/141 (read) init/140 (write) init/140 (read) 
+  Availability: not-ready
+  Varpool flags:
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+snprintf/167 (snprintf) @06e16a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: dump_registers/144 (350791453 (estimated locally),11.68 per call) 
+  Calls: 
+printf/166 (printf) @06e169a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: dump_registers/144 (226774272 (estimated locally),7.55 per call) 
+  Calls: 
+MXC_Delay/165 (MXC_Delay) @06e16700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: reset/145 (955630225 (estimated locally),8.09 per call) 
+  Calls: 
+sccb_write_byt/164 (sccb_write_byt) @06dd27e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: reset/145 (955630225 (estimated locally),8.09 per call) reset/145 (118111600 (estimated locally),1.00 per call) sleep/146 (536870913 (estimated locally),0.50 per call) write_reg/148 (1073741824 (estimated locally),1.00 per call) set_pixformat/149 (214748365 (estimated locally),0.20 per call) set_pixformat/149 (214748365 (estimated locally),0.20 per call) set_pixformat/149 (214748365 (estimated locally),0.20 per call) set_pixformat/149 (214748365 (estimated locally),0.20 per call) set_framesize/151 (1073741824 (estimated locally),1.00 per call) set_framesize/151 (1073741824 (estimated locally),1.00 per call) set_framesize/151 (1073741824 (estimated locally),1.00 per call) set_framesize/151 (1073741824 (estimated locally),1.00 per call) set_framesize/151 (1073741824 (estimated locally),1.00 per call) set_framesize/151 (1073741824 (estimated locally),1.00 per call) set_framesize/151 (1073741824 (estimated locally),1.00 per call) set_framesize/151 (1073741824 (estimated locally),1.00 per call) set_windowing/152 (1073741824 (estimated locally),1.00 per call) set_windowing/152 (1073741824 (estimated locally),1.00 per call) set_windowing/152 (1073741824 (estimated locally),1.00 per call) set_windowing/152 (1073741824 (estimated locally),1.00 per call) set_windowing/152 (1073741824 (estimated locally),1.00 per call) set_windowing/152 (1073741824 (estimated locally),1.00 per call) set_windowing/152 (1073741824 (estimated locally),1.00 per call) set_windowing/152 (1073741824 (estimated locally),1.00 per call) set_windowing/152 (1073741824 (estimated locally),1.00 per call) set_windowing/152 (1073741824 (estimated locally),1.00 per call) set_windowing/152 (1073741824 (estimated locally),1.00 per call) set_windowing/152 (1073741824 (estimated locally),1.00 per call) set_windowing/152 (1073741824 (estimated locally),1.00 per call) set_windowing/152 (1073741824 (estimated locally),1.00 per call) set_windowing/152 (1073741824 (estimated locally),1.00 per call) set_windowing/152 (1073741824 (estimated locally),1.00 per call) set_contrast/153 (178956968 (estimated locally),0.17 per call) set_contrast/153 (178956968 (estimated locally),0.17 per call) set_contrast/153 (178956968 (estimated locally),0.17 per call) set_contrast/153 (178956968 (estimated locally),0.17 per call) set_contrast/153 (178956968 (estimated locally),0.17 per call) set_contrast/153 (178956968 (estimated locally),0.17 per call) set_contrast/153 (178956968 (estimated locally),0.17 per call) set_contrast/153 (178956968 (estimated locally),0.17 per call) set_contrast/153 (178956968 (estimated locally),0.17 per call) set_contrast/153 (178956968 (estimated locally),0.17 per call) set_contrast/153 (178956968 (estimated locally),0.17 per call) set_contrast/153 (178956968 (estimated locally),0.17 per call) set_contrast/153 (178956968 (estimated locally),0.17 per call) set_contrast/153 (178956968 (estimated locally),0.17 per call) set_contrast/153 (178956968 (estimated locally),0.17 per call) set_contrast/153 (178956968 (estimated locally),0.17 per call) set_contrast/153 (178956968 (estimated locally),0.17 per call) set_contrast/153 (178956968 (estimated locally),0.17 per call) set_contrast/153 (178956968 (estimated locally),0.17 per call) set_contrast/153 (178956968 (estimated locally),0.17 per call) set_brightness/154 (178956968 (estimated locally),0.17 per call) set_brightness/154 (178956968 (estimated locally),0.17 per call) set_brightness/154 (178956968 (estimated locally),0.17 per call) set_brightness/154 (178956968 (estimated locally),0.17 per call) set_brightness/154 (178956968 (estimated locally),0.17 per call) set_brightness/154 (178956968 (estimated locally),0.17 per call) set_brightness/154 (178956968 (estimated locally),0.17 per call) set_brightness/154 (178956968 (estimated locally),0.17 per call) set_brightness/154 (178956968 (estimated locally),0.17 per call) set_brightness/154 (178956968 (estimated locally),0.17 per call) set_brightness/154 (178956968 (estimated locally),0.17 per call) set_brightness/154 (178956968 (estimated locally),0.17 per call) set_brightness/154 (178956968 (estimated locally),0.17 per call) set_brightness/154 (178956968 (estimated locally),0.17 per call) set_brightness/154 (178956968 (estimated locally),0.17 per call) set_gainceiling/156 (402653184 (estimated locally),0.38 per call) set_gainceiling/156 (268435456 (estimated locally),0.25 per call) set_gainceiling/156 (134217728 (estimated locally),0.12 per call) set_gainceiling/156 (134217728 (estimated locally),0.12 per call) set_gainceiling/156 (134217728 (estimated locally),0.12 per call) set_gainceiling/156 (134217728 (estimated locally),0.12 per call) set_gainceiling/156 (134217728 (estimated locally),0.12 per call) set_colorbar/157 (1073741824 (estimated locally),1.00 per call) set_hmirror/158 (1073741824 (estimated locally),1.00 per call) set_vflip/160 (1073741824 (estimated locally),1.00 per call) set_negateimage/159 (536870913 (estimated locally),0.50 per call) set_negateimage/159 (536870913 (estimated locally),0.50 per call) set_negateimage/159 (536870913 (estimated locally),0.50 per call) set_negateimage/159 (536870913 (estimated locally),0.50 per call) set_negateimage/159 (536870913 (estimated locally),0.50 per call) set_negateimage/159 (536870913 (estimated locally),0.50 per call) set_negateimage/159 (536870913 (estimated locally),0.50 per call) set_negateimage/159 (536870913 (estimated locally),0.50 per call) set_negateimage/159 (536870913 (estimated locally),0.50 per call) set_negateimage/159 (536870913 (estimated locally),0.50 per call) 
+  Calls: 
+sccb_read_byt/163 (sccb_read_byt) @06dd2620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: dump_registers/144 (1063004410 (estimated locally),35.40 per call) reset/145 (955630225 (estimated locally),8.09 per call) sleep/146 (1073741824 (estimated locally),1.00 per call) set_gainceiling/156 (1073741824 (estimated locally),1.00 per call) set_colorbar/157 (1073741824 (estimated locally),1.00 per call) set_hmirror/158 (1073741824 (estimated locally),1.00 per call) set_vflip/160 (1073741824 (estimated locally),1.00 per call) get_product_id/142 (1073741824 (estimated locally),1.00 per call) get_product_id/142 (1073741824 (estimated locally),1.00 per call) get_manufacture_id/143 (1073741824 (estimated locally),1.00 per call) get_manufacture_id/143 (1073741824 (estimated locally),1.00 per call) read_reg/147 (1073741824 (estimated locally),1.00 per call) get_luminance/161 (1073741824 (estimated locally),1.00 per call) get_luminance/161 (1073741824 (estimated locally),1.00 per call) get_luminance/161 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+sensor_register/162 (sensor_register) @06dd22a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: init/140 (addr) get_slave_address/141 (addr) get_product_id/142 (addr) get_manufacture_id/143 (addr) dump_registers/144 (addr) reset/145 (addr) sleep/146 (addr) read_reg/147 (addr) write_reg/148 (addr) set_pixformat/149 (addr) get_pixformat/150 (addr) set_framesize/151 (addr) set_windowing/152 (addr) set_contrast/153 (addr) set_brightness/154 (addr) set_saturation/155 (addr) set_gainceiling/156 (addr) set_colorbar/157 (addr) set_hmirror/158 (addr) set_vflip/160 (addr) set_negateimage/159 (addr) get_luminance/161 (addr) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn
+  Called by: 
+  Calls: 
+get_luminance/161 (get_luminance) @06dd20e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: sccb_read_byt/163 (1073741824 (estimated locally),1.00 per call) sccb_read_byt/163 (1073741824 (estimated locally),1.00 per call) sccb_read_byt/163 (1073741824 (estimated locally),1.00 per call) 
+set_vflip/160 (set_vflip) @06dc7c40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) sccb_read_byt/163 (1073741824 (estimated locally),1.00 per call) 
+set_negateimage/159 (set_negateimage) @06dc79a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: sccb_write_byt/164 (536870913 (estimated locally),0.50 per call) sccb_write_byt/164 (536870913 (estimated locally),0.50 per call) sccb_write_byt/164 (536870913 (estimated locally),0.50 per call) sccb_write_byt/164 (536870913 (estimated locally),0.50 per call) sccb_write_byt/164 (536870913 (estimated locally),0.50 per call) sccb_write_byt/164 (536870913 (estimated locally),0.50 per call) sccb_write_byt/164 (536870913 (estimated locally),0.50 per call) sccb_write_byt/164 (536870913 (estimated locally),0.50 per call) sccb_write_byt/164 (536870913 (estimated locally),0.50 per call) sccb_write_byt/164 (536870913 (estimated locally),0.50 per call) 
+set_hmirror/158 (set_hmirror) @06dc77e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) sccb_read_byt/163 (1073741824 (estimated locally),1.00 per call) 
+set_colorbar/157 (set_colorbar) @06dc7540
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) sccb_read_byt/163 (1073741824 (estimated locally),1.00 per call) 
+set_gainceiling/156 (set_gainceiling) @06dc72a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: sccb_write_byt/164 (402653184 (estimated locally),0.38 per call) sccb_write_byt/164 (268435456 (estimated locally),0.25 per call) sccb_write_byt/164 (134217728 (estimated locally),0.12 per call) sccb_write_byt/164 (134217728 (estimated locally),0.12 per call) sccb_write_byt/164 (134217728 (estimated locally),0.12 per call) sccb_write_byt/164 (134217728 (estimated locally),0.12 per call) sccb_write_byt/164 (134217728 (estimated locally),0.12 per call) sccb_read_byt/163 (1073741824 (estimated locally),1.00 per call) 
+set_saturation/155 (set_saturation) @06dc7000
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: sensor_register/162 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn
+  Called by: 
+  Calls: 
+set_brightness/154 (set_brightness) @06dc1e00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) 
+set_contrast/153 (set_contrast) @06dc1c40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) sccb_write_byt/164 (178956968 (estimated locally),0.17 per call) 
+set_windowing/152 (set_windowing) @06dc1a80
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) 
+set_framesize/151 (set_framesize) @06dc11c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) 
+get_pixformat/150 (get_pixformat) @06db4c40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: g_pixelformat/138 (read) 
+  Referring: sensor_register/162 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn
+  Called by: 
+  Calls: 
+set_pixformat/149 (set_pixformat) @06db4a80
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: g_pixelformat/138 (write) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Availability: available
+  Function flags: count:1073741809 (estimated locally) body
+  Called by: 
+  Calls: sccb_write_byt/164 (214748365 (estimated locally),0.20 per call) sccb_write_byt/164 (214748365 (estimated locally),0.20 per call) sccb_write_byt/164 (214748365 (estimated locally),0.20 per call) sccb_write_byt/164 (214748365 (estimated locally),0.20 per call) 
+write_reg/148 (write_reg) @06db4540
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: sccb_write_byt/164 (1073741824 (estimated locally),1.00 per call) 
+read_reg/147 (read_reg) @06db4380
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: sccb_read_byt/163 (1073741824 (estimated locally),1.00 per call) 
+sleep/146 (sleep) @06db41c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: sccb_write_byt/164 (536870913 (estimated locally),0.50 per call) sccb_read_byt/163 (1073741824 (estimated locally),1.00 per call) 
+reset/145 (reset) @06dafee0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) g_slv_addr/137 (read) default_regs/139 (read) default_regs/139 (read) 
+  Referring: sensor_register/162 (addr) 
+  Availability: available
+  Function flags: count:118111600 (estimated locally) body
+  Called by: 
+  Calls: sccb_write_byt/164 (955630225 (estimated locally),8.09 per call) MXC_Delay/165 (955630225 (estimated locally),8.09 per call) sccb_read_byt/163 (955630225 (estimated locally),8.09 per call) sccb_write_byt/164 (118111600 (estimated locally),1.00 per call) 
+dump_registers/144 (dump_registers) @06dafa80
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Availability: available
+  Function flags: count:30030946 (estimated locally) body
+  Called by: 
+  Calls: snprintf/167 (350791453 (estimated locally),11.68 per call) sccb_read_byt/163 (1063004410 (estimated locally),35.40 per call) printf/166 (226774272 (estimated locally),7.55 per call) 
+get_manufacture_id/143 (get_manufacture_id) @06daf8c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: sccb_read_byt/163 (1073741824 (estimated locally),1.00 per call) sccb_read_byt/163 (1073741824 (estimated locally),1.00 per call) 
+get_product_id/142 (get_product_id) @06daf540
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: g_slv_addr/137 (read) g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: sccb_read_byt/163 (1073741824 (estimated locally),1.00 per call) sccb_read_byt/163 (1073741824 (estimated locally),1.00 per call) 
+get_slave_address/141 (get_slave_address) @06daf1c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: g_slv_addr/137 (read) 
+  Referring: sensor_register/162 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn
+  Called by: 
+  Calls: 
+init/140 (init) @06daf000
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: g_slv_addr/137 (write) 
+  Referring: sensor_register/162 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn
+  Called by: 
+  Calls: 
+default_regs/139 (default_regs) @06d6eab0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: reset/145 (read) reset/145 (read) 
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+g_pixelformat/138 (g_pixelformat) @06d6ea20
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: get_pixformat/150 (read) set_pixformat/149 (write) 
+  Availability: available
+  Varpool flags: initialized
+g_slv_addr/137 (g_slv_addr) @06d6e9d8
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: reset/145 (read) sleep/146 (read) init/140 (write) set_pixformat/149 (read) write_reg/148 (read) sleep/146 (read) set_pixformat/149 (read) get_luminance/161 (read) get_luminance/161 (read) read_reg/147 (read) set_framesize/151 (read) get_manufacture_id/143 (read) get_manufacture_id/143 (read) get_product_id/142 (read) get_product_id/142 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_vflip/160 (read) set_vflip/160 (read) set_contrast/153 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) get_luminance/161 (read) set_hmirror/158 (read) set_hmirror/158 (read) set_framesize/151 (read) get_slave_address/141 (read) set_framesize/151 (read) set_pixformat/149 (read) set_framesize/151 (read) set_contrast/153 (read) set_contrast/153 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_colorbar/157 (read) set_colorbar/157 (read) set_contrast/153 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_negateimage/159 (read) set_negateimage/159 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_gainceiling/156 (read) set_contrast/153 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_brightness/154 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_contrast/153 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_windowing/152 (read) set_framesize/151 (read) set_framesize/151 (read) set_framesize/151 (read) set_framesize/151 (read) set_pixformat/149 (read) reset/145 (read) reset/145 (read) dump_registers/144 (read) 
+  Availability: available
+  Varpool flags:
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: default_regs/139 g_pixelformat/138 g_slv_addr/137
+Removing variables:
+
+Final Symbol table:
+
+snprintf/167 (snprintf) @06e16a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+printf/166 (printf) @06e169a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_Delay/165 (MXC_Delay) @06e16700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+sccb_write_byt/164 (sccb_write_byt) @06dd27e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+sccb_read_byt/163 (sccb_read_byt) @06dd2620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+sensor_register/162 (sensor_register) @06dd22a0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.sensor_register (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn
+  Called by: 
+  Calls: 
+get_luminance/161 (get_luminance) @06dd20e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.get_luminance (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+set_vflip/160 (set_vflip) @06dc7c40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.set_vflip (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+set_negateimage/159 (set_negateimage) @06dc79a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.set_negateimage (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+set_hmirror/158 (set_hmirror) @06dc77e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.set_hmirror (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+set_colorbar/157 (set_colorbar) @06dc7540
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.set_colorbar (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+set_gainceiling/156 (set_gainceiling) @06dc72a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.set_gainceiling (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+set_saturation/155 (set_saturation) @06dc7000
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.set_saturation (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn
+  Called by: 
+  Calls: 
+set_brightness/154 (set_brightness) @06dc1e00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.set_brightness (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+set_contrast/153 (set_contrast) @06dc1c40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.set_contrast (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+set_windowing/152 (set_windowing) @06dc1a80
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.set_windowing (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+set_framesize/151 (set_framesize) @06dc11c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.set_framesize (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+get_pixformat/150 (get_pixformat) @06db4c40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.get_pixformat (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn
+  Called by: 
+  Calls: 
+set_pixformat/149 (set_pixformat) @06db4a80
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.set_pixformat (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741809 (estimated locally)
+  Called by: 
+  Calls: 
+write_reg/148 (write_reg) @06db4540
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.write_reg (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+read_reg/147 (read_reg) @06db4380
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.read_reg (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+sleep/146 (sleep) @06db41c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.sleep (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+reset/145 (reset) @06dafee0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.reset (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:118111600 (estimated locally)
+  Called by: 
+  Calls: 
+dump_registers/144 (dump_registers) @06dafa80
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.dump_registers (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:30030946 (estimated locally)
+  Called by: 
+  Calls: 
+get_manufacture_id/143 (get_manufacture_id) @06daf8c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.get_manufacture_id (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+get_product_id/142 (get_product_id) @06daf540
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.get_product_id (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+get_slave_address/141 (get_slave_address) @06daf1c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.get_slave_address (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn
+  Called by: 
+  Calls: 
+init/140 (init) @06daf000
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.init (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn
+  Called by: 
+  Calls: 
+default_regs/139 (default_regs) @06d6eab0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.rodata.default_regs (implicit_section)
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+g_pixelformat/138 (g_pixelformat) @06d6ea20
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.data.g_pixelformat (implicit_section)
+  Aux: @06d6eab0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+g_slv_addr/137 (g_slv_addr) @06d6e9d8
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.bss.g_slv_addr (implicit_section)
+  Aux: @06d6ea20
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:

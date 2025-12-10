@@ -1,0 +1,2345 @@
+Trivially needed symbols: max20303_init/152 max20303_gpio/151 max20303_sd_power/150 max20303_camera_power/149 max20303_mic_power/148 max20303_led_blue/147 max20303_led_green/146 max20303_led_red/145 max20303_led/144
+
+
+Initial Symbol table:
+
+MXC_I2C_SetRXThreshold/157 (MXC_I2C_SetRXThreshold) @06c6d620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: max20303_init/152 
+  Calls: 
+MXC_I2C_SetTXThreshold/156 (MXC_I2C_SetTXThreshold) @06c6d540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: max20303_init/152 
+  Calls: 
+MXC_I2C_SetFrequency/155 (MXC_I2C_SetFrequency) @06c6d460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: max20303_init/152 
+  Calls: 
+MXC_I2C_Init/154 (MXC_I2C_Init) @06c6d2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: max20303_init/152 
+  Calls: 
+MXC_Delay/153 (MXC_Delay) @06c2ea80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: max20303_gpio/151 max20303_gpio/151 max20303_gpio/151 max20303_sd_power/150 max20303_sd_power/150 max20303_sd_power/150 max20303_camera_power/149 max20303_mic_power/148 
+  Calls: 
+max20303_init/152 (max20303_init) @06c2e1c0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @019a7020
+  References: i2c/139 (read) i2c/139 (write) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_read/143 MXC_I2C_SetRXThreshold/157 MXC_I2C_SetTXThreshold/156 MXC_I2C_SetFrequency/155 MXC_I2C_Init/154 
+max20303_gpio/151 (max20303_gpio) @06c2e000
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06c2e1c0
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_read/143 MXC_Delay/153 reg_write/141 reg_write_buf/142 reg_read/143 reg_read/143 MXC_Delay/153 reg_write/141 reg_read/143 MXC_Delay/153 reg_write/141 reg_write_buf/142 
+max20303_sd_power/150 (max20303_sd_power) @06c22e00
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06c2e000
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_read/143 MXC_Delay/153 reg_write/141 reg_write_buf/142 reg_read/143 reg_read/143 MXC_Delay/153 reg_write/141 reg_read/143 MXC_Delay/153 reg_write/141 reg_write_buf/142 
+max20303_camera_power/149 (max20303_camera_power) @06c22c40
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06c22e00
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_read/143 MXC_Delay/153 reg_write/141 reg_write_buf/142 
+max20303_mic_power/148 (max20303_mic_power) @06c22a80
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06c22c40
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_read/143 MXC_Delay/153 reg_write/141 reg_write_buf/142 
+max20303_led_blue/147 (max20303_led_blue) @06c228c0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06c22a80
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_write/141 
+max20303_led_green/146 (max20303_led_green) @06c22700
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06c228c0
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_write/141 
+max20303_led_red/145 (max20303_led_red) @06c22540
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06c22700
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_write/141 
+max20303_led/144 (max20303_led) @06c22380
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06c22540
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_write/141 
+reg_read/143 (reg_read) @06c221c0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @06c22c40
+  References: i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: max20303_init/152 max20303_gpio/151 max20303_gpio/151 max20303_gpio/151 max20303_gpio/151 max20303_sd_power/150 max20303_sd_power/150 max20303_sd_power/150 max20303_sd_power/150 max20303_camera_power/149 max20303_mic_power/148 
+  Calls: i2c_flush/140 
+reg_write_buf/142 (reg_write_buf) @06c22000
+  Type: function definition analyzed
+  Visibility:
+  Aux: @06c221c0
+  References: i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: max20303_gpio/151 max20303_gpio/151 max20303_sd_power/150 max20303_sd_power/150 max20303_camera_power/149 max20303_mic_power/148 
+  Calls: i2c_flush/140 
+reg_write/141 (reg_write) @06c05e00
+  Type: function definition analyzed
+  Visibility:
+  Aux: @06c22540
+  References: i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: max20303_gpio/151 max20303_gpio/151 max20303_gpio/151 max20303_sd_power/150 max20303_sd_power/150 max20303_sd_power/150 max20303_camera_power/149 max20303_mic_power/148 max20303_led_blue/147 max20303_led_green/146 max20303_led_red/145 max20303_led/144 
+  Calls: i2c_flush/140 
+i2c_flush/140 (i2c_flush) @06c05c40
+  Type: function definition analyzed
+  Visibility:
+  Aux: @06c22540
+  References: i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: reg_read/143 reg_write_buf/142 reg_write/141 
+  Calls: 
+i2c/139 (i2c) @06c04168
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @06c05e00
+  References: 
+  Referring: max20303_led/144 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) max20303_led_red/145 (read) max20303_led_green/146 (read) max20303_led_blue/147 (read) max20303_mic_power/148 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) max20303_camera_power/149 (read) max20303_sd_power/150 (read) max20303_gpio/151 (read) max20303_init/152 (read) max20303_init/152 (write) max20303_init/152 (read) max20303_init/152 (read) max20303_init/152 (read) max20303_init/152 (read) max20303_init/152 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+MXC_SYS_In_Crit_Section/138 (MXC_SYS_In_Crit_Section) @06bbba80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_SYS_Crit_Exit/137 (MXC_SYS_Crit_Exit) @06bbb8c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_SYS_Crit_Enter/136 (MXC_SYS_Crit_Enter) @06bbb700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_mxc_crit_get_state/135 (_mxc_crit_get_state) @06bbb540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_state/134 (_state) @06bba048
+  Type: variable definition
+  Visibility:
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized
+ITM_CheckChar/133 (ITM_CheckChar) @06b56000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_ReceiveChar/132 (ITM_ReceiveChar) @06b37ee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_SendChar/131 (ITM_SendChar) @06b37d20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SysTick_Config/130 (SysTick_Config) @06b379a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SCB_GetFPUType/129 (SCB_GetFPUType) @06b377e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Load/128 (ARM_MPU_Load) @06b37620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_OrderedMemcpy/127 (ARM_MPU_OrderedMemcpy) @06b37460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegionEx/126 (ARM_MPU_SetRegionEx) @06b372a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegion/125 (ARM_MPU_SetRegion) @06b370e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_ClrRegion/124 (ARM_MPU_ClrRegion) @06b2eee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Disable/123 (ARM_MPU_Disable) @06b2ed20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Enable/122 (ARM_MPU_Enable) @06b2eb60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SystemReset/121 (__NVIC_SystemReset) @06b2e380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetVector/120 (__NVIC_GetVector) @06b2e1c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetVector/119 (__NVIC_SetVector) @06b2e000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_DecodePriority/118 (NVIC_DecodePriority) @06b28e00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_EncodePriority/117 (NVIC_EncodePriority) @06b28c40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriority/116 (__NVIC_GetPriority) @06b28a80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriority/115 (__NVIC_SetPriority) @06b288c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetActive/114 (__NVIC_GetActive) @06b28700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_ClearPendingIRQ/113 (__NVIC_ClearPendingIRQ) @06b28540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPendingIRQ/112 (__NVIC_SetPendingIRQ) @06b28380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPendingIRQ/111 (__NVIC_GetPendingIRQ) @06b281c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_DisableIRQ/110 (__NVIC_DisableIRQ) @06b28000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetEnableIRQ/109 (__NVIC_GetEnableIRQ) @06b22e00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_EnableIRQ/108 (__NVIC_EnableIRQ) @06b22c40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriorityGrouping/107 (__NVIC_GetPriorityGrouping) @06b22a80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriorityGrouping/106 (__NVIC_SetPriorityGrouping) @06b228c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMMLA/105 (__SMMLA) @06ae89a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB/104 (__QSUB) @06ae8700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD/103 (__QADD) @06ae8540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SEL/102 (__SEL) @06ae8380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSLDX/101 (__SMLSLDX) @06ae81c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSLD/100 (__SMLSLD) @06ae8000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSDX/99 (__SMLSDX) @06ae3e00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSD/98 (__SMLSD) @06ae3c40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUSDX/97 (__SMUSDX) @06ae3a80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUSD/96 (__SMUSD) @06ae38c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLALDX/95 (__SMLALDX) @06ae3700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLALD/94 (__SMLALD) @06ae3540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLADX/93 (__SMLADX) @06ae3380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLAD/92 (__SMLAD) @06ae31c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUADX/91 (__SMUADX) @06ae3000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUAD/90 (__SMUAD) @06adee00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTAB16_RORn/89 (__SXTAB16_RORn) @06adec40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTAB16/88 (__SXTAB16) @06adea80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTB16_RORn/87 (__SXTB16_RORn) @06ade8c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTB16/86 (__SXTB16) @06ade700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UXTAB16/85 (__UXTAB16) @06ade540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UXTB16/84 (__UXTB16) @06ade380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USADA8/83 (__USADA8) @06ade000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USAD8/82 (__USAD8) @06ad9e00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSAX/81 (__UHSAX) @06ad9c40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSAX/80 (__UQSAX) @06ad9a80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USAX/79 (__USAX) @06ad98c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSAX/78 (__SHSAX) @06ad9700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSAX/77 (__QSAX) @06ad9540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSAX/76 (__SSAX) @06ad9380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHASX/75 (__UHASX) @06ad91c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQASX/74 (__UQASX) @06ad9000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UASX/73 (__UASX) @06ad5e00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHASX/72 (__SHASX) @06ad5c40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QASX/71 (__QASX) @06ad5a80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SASX/70 (__SASX) @06ad58c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSUB16/69 (__UHSUB16) @06ad5700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSUB16/68 (__UQSUB16) @06ad5540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USUB16/67 (__USUB16) @06ad5380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSUB16/66 (__SHSUB16) @06ad51c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB16/65 (__QSUB16) @06ad5000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSUB16/64 (__SSUB16) @06acde00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHADD16/63 (__UHADD16) @06acdc40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQADD16/62 (__UQADD16) @06acda80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UADD16/61 (__UADD16) @06acd8c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHADD16/60 (__SHADD16) @06acd700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD16/59 (__QADD16) @06acd540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SADD16/58 (__SADD16) @06acd380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSUB8/57 (__UHSUB8) @06acd1c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSUB8/56 (__UQSUB8) @06acd000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USUB8/55 (__USUB8) @06ac9e00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSUB8/54 (__SHSUB8) @06ac9c40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB8/53 (__QSUB8) @06ac9a80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSUB8/52 (__SSUB8) @06ac98c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHADD8/51 (__UHADD8) @06ac9700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQADD8/50 (__UQADD8) @06ac9540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UADD8/49 (__UADD8) @06ac9380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHADD8/48 (__SHADD8) @06ac91c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD8/47 (__QADD8) @06ac9000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SADD8/46 (__SADD8) @06ac5e00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FPSCR/45 (__set_FPSCR) @06ac5c40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FPSCR/44 (__get_FPSCR) @06ac5a80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FAULTMASK/43 (__set_FAULTMASK) @06ac58c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FAULTMASK/42 (__get_FAULTMASK) @06ac5700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI_MAX/41 (__set_BASEPRI_MAX) @06ac5540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI/40 (__set_BASEPRI) @06ac5380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_BASEPRI/39 (__get_BASEPRI) @06ac51c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_fault_irq/38 (__disable_fault_irq) @06ac5000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_fault_irq/37 (__enable_fault_irq) @06ac1e00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PRIMASK/36 (__set_PRIMASK) @06ac1c40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PRIMASK/35 (__get_PRIMASK) @06ac1a80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_MSP/34 (__set_MSP) @06ac18c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_MSP/33 (__get_MSP) @06ac1700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PSP/32 (__set_PSP) @06ac1540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PSP/31 (__get_PSP) @06ac1380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_xPSR/30 (__get_xPSR) @06ac11c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_APSR/29 (__get_APSR) @06ac1000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_IPSR/28 (__get_IPSR) @06abbe00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_CONTROL/27 (__set_CONTROL) @06abbc40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_CONTROL/26 (__get_CONTROL) @06abba80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_irq/25 (__disable_irq) @06abb8c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_irq/24 (__enable_irq) @06abb700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRT/23 (__STRT) @06abb540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRHT/22 (__STRHT) @06abb380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRBT/21 (__STRBT) @06abb1c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRT/20 (__LDRT) @06abb000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRHT/19 (__LDRHT) @06ab6e00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRBT/18 (__LDRBT) @06ab6c40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RRX/17 (__RRX) @06ab6a80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLREX/16 (__CLREX) @06ab6700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXW/15 (__STREXW) @06ab6540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXH/14 (__STREXH) @06ab6380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXB/13 (__STREXB) @06ab61c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXW/12 (__LDREXW) @06ab6000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXH/11 (__LDREXH) @06ab1e00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXB/10 (__LDREXB) @06ab1c40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLZ/9 (__CLZ) @06ab1a80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RBIT/8 (__RBIT) @06ab18c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ROR/7 (__ROR) @06ab1700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REVSH/6 (__REVSH) @06ab1540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV16/5 (__REV16) @06ab1380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV/4 (__REV) @06ab11c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DMB/3 (__DMB) @06ab1000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DSB/2 (__DSB) @06a7be00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ISB/1 (__ISB) @06a7bc40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__cmsis_start/0 (__cmsis_start) @06a7b7e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+
+Removing unused symbols: MXC_SYS_In_Crit_Section/138 MXC_SYS_Crit_Exit/137 MXC_SYS_Crit_Enter/136 _mxc_crit_get_state/135 _state/134 ITM_CheckChar/133 ITM_ReceiveChar/132 ITM_SendChar/131 SysTick_Config/130 SCB_GetFPUType/129 ARM_MPU_Load/128 ARM_MPU_OrderedMemcpy/127 ARM_MPU_SetRegionEx/126 ARM_MPU_SetRegion/125 ARM_MPU_ClrRegion/124 ARM_MPU_Disable/123 ARM_MPU_Enable/122 __NVIC_SystemReset/121 __NVIC_GetVector/120 __NVIC_SetVector/119 NVIC_DecodePriority/118 NVIC_EncodePriority/117 __NVIC_GetPriority/116 __NVIC_SetPriority/115 __NVIC_GetActive/114 __NVIC_ClearPendingIRQ/113 __NVIC_SetPendingIRQ/112 __NVIC_GetPendingIRQ/111 __NVIC_DisableIRQ/110 __NVIC_GetEnableIRQ/109 __NVIC_EnableIRQ/108 __NVIC_GetPriorityGrouping/107 __NVIC_SetPriorityGrouping/106 __SMMLA/105 __QSUB/104 __QADD/103 __SEL/102 __SMLSLDX/101 __SMLSLD/100 __SMLSDX/99 __SMLSD/98 __SMUSDX/97 __SMUSD/96 __SMLALDX/95 __SMLALD/94 __SMLADX/93 __SMLAD/92 __SMUADX/91 __SMUAD/90 __SXTAB16_RORn/89 __SXTAB16/88 __SXTB16_RORn/87 __SXTB16/86 __UXTAB16/85 __UXTB16/84 __USADA8/83 __USAD8/82 __UHSAX/81 __UQSAX/80 __USAX/79 __SHSAX/78 __QSAX/77 __SSAX/76 __UHASX/75 __UQASX/74 __UASX/73 __SHASX/72 __QASX/71 __SASX/70 __UHSUB16/69 __UQSUB16/68 __USUB16/67 __SHSUB16/66 __QSUB16/65 __SSUB16/64 __UHADD16/63 __UQADD16/62 __UADD16/61 __SHADD16/60 __QADD16/59 __SADD16/58 __UHSUB8/57 __UQSUB8/56 __USUB8/55 __SHSUB8/54 __QSUB8/53 __SSUB8/52 __UHADD8/51 __UQADD8/50 __UADD8/49 __SHADD8/48 __QADD8/47 __SADD8/46 __set_FPSCR/45 __get_FPSCR/44 __set_FAULTMASK/43 __get_FAULTMASK/42 __set_BASEPRI_MAX/41 __set_BASEPRI/40 __get_BASEPRI/39 __disable_fault_irq/38 __enable_fault_irq/37 __set_PRIMASK/36 __get_PRIMASK/35 __set_MSP/34 __get_MSP/33 __set_PSP/32 __get_PSP/31 __get_xPSR/30 __get_APSR/29 __get_IPSR/28 __set_CONTROL/27 __get_CONTROL/26 __disable_irq/25 __enable_irq/24 __STRT/23 __STRHT/22 __STRBT/21 __LDRT/20 __LDRHT/19 __LDRBT/18 __RRX/17 __CLREX/16 __STREXW/15 __STREXH/14 __STREXB/13 __LDREXW/12 __LDREXH/11 __LDREXB/10 __CLZ/9 __RBIT/8 __ROR/7 __REVSH/6 __REV16/5 __REV/4 __DMB/3 __DSB/2 __ISB/1 __cmsis_start/0
+
+Reclaimed Symbol table:
+
+MXC_I2C_SetRXThreshold/157 (MXC_I2C_SetRXThreshold) @06c6d620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: max20303_init/152 
+  Calls: 
+MXC_I2C_SetTXThreshold/156 (MXC_I2C_SetTXThreshold) @06c6d540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: max20303_init/152 
+  Calls: 
+MXC_I2C_SetFrequency/155 (MXC_I2C_SetFrequency) @06c6d460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: max20303_init/152 
+  Calls: 
+MXC_I2C_Init/154 (MXC_I2C_Init) @06c6d2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: max20303_init/152 
+  Calls: 
+MXC_Delay/153 (MXC_Delay) @06c2ea80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: max20303_gpio/151 max20303_gpio/151 max20303_gpio/151 max20303_sd_power/150 max20303_sd_power/150 max20303_sd_power/150 max20303_camera_power/149 max20303_mic_power/148 
+  Calls: 
+max20303_init/152 (max20303_init) @06c2e1c0
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) i2c/139 (write) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_read/143 MXC_I2C_SetRXThreshold/157 MXC_I2C_SetTXThreshold/156 MXC_I2C_SetFrequency/155 MXC_I2C_Init/154 
+max20303_gpio/151 (max20303_gpio) @06c2e000
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_read/143 MXC_Delay/153 reg_write/141 reg_write_buf/142 reg_read/143 reg_read/143 MXC_Delay/153 reg_write/141 reg_read/143 MXC_Delay/153 reg_write/141 reg_write_buf/142 
+max20303_sd_power/150 (max20303_sd_power) @06c22e00
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_read/143 MXC_Delay/153 reg_write/141 reg_write_buf/142 reg_read/143 reg_read/143 MXC_Delay/153 reg_write/141 reg_read/143 MXC_Delay/153 reg_write/141 reg_write_buf/142 
+max20303_camera_power/149 (max20303_camera_power) @06c22c40
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_read/143 MXC_Delay/153 reg_write/141 reg_write_buf/142 
+max20303_mic_power/148 (max20303_mic_power) @06c22a80
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_read/143 MXC_Delay/153 reg_write/141 reg_write_buf/142 
+max20303_led_blue/147 (max20303_led_blue) @06c228c0
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_write/141 
+max20303_led_green/146 (max20303_led_green) @06c22700
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_write/141 
+max20303_led_red/145 (max20303_led_red) @06c22540
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_write/141 
+max20303_led/144 (max20303_led) @06c22380
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_write/141 
+reg_read/143 (reg_read) @06c221c0
+  Type: function definition analyzed
+  Visibility:
+  References: i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: max20303_init/152 max20303_gpio/151 max20303_gpio/151 max20303_gpio/151 max20303_gpio/151 max20303_sd_power/150 max20303_sd_power/150 max20303_sd_power/150 max20303_sd_power/150 max20303_camera_power/149 max20303_mic_power/148 
+  Calls: i2c_flush/140 
+reg_write_buf/142 (reg_write_buf) @06c22000
+  Type: function definition analyzed
+  Visibility:
+  References: i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: max20303_gpio/151 max20303_gpio/151 max20303_sd_power/150 max20303_sd_power/150 max20303_camera_power/149 max20303_mic_power/148 
+  Calls: i2c_flush/140 
+reg_write/141 (reg_write) @06c05e00
+  Type: function definition analyzed
+  Visibility:
+  References: i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: max20303_gpio/151 max20303_gpio/151 max20303_gpio/151 max20303_sd_power/150 max20303_sd_power/150 max20303_sd_power/150 max20303_camera_power/149 max20303_mic_power/148 max20303_led_blue/147 max20303_led_green/146 max20303_led_red/145 max20303_led/144 
+  Calls: i2c_flush/140 
+i2c_flush/140 (i2c_flush) @06c05c40
+  Type: function definition analyzed
+  Visibility:
+  References: i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: reg_read/143 reg_write_buf/142 reg_write/141 
+  Calls: 
+i2c/139 (i2c) @06c04168
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: max20303_led/144 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) max20303_led_red/145 (read) max20303_led_green/146 (read) max20303_led_blue/147 (read) max20303_mic_power/148 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) max20303_camera_power/149 (read) max20303_sd_power/150 (read) max20303_gpio/151 (read) max20303_init/152 (read) max20303_init/152 (write) max20303_init/152 (read) max20303_init/152 (read) max20303_init/152 (read) max20303_init/152 (read) max20303_init/152 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+
+Initial Symbol table:
+
+MXC_I2C_SetRXThreshold/157 (MXC_I2C_SetRXThreshold) @06c6d620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: max20303_init/152 
+  Calls: 
+MXC_I2C_SetTXThreshold/156 (MXC_I2C_SetTXThreshold) @06c6d540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: max20303_init/152 
+  Calls: 
+MXC_I2C_SetFrequency/155 (MXC_I2C_SetFrequency) @06c6d460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: max20303_init/152 
+  Calls: 
+MXC_I2C_Init/154 (MXC_I2C_Init) @06c6d2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: max20303_init/152 
+  Calls: 
+MXC_Delay/153 (MXC_Delay) @06c2ea80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: max20303_gpio/151 max20303_gpio/151 max20303_gpio/151 max20303_sd_power/150 max20303_sd_power/150 max20303_sd_power/150 max20303_camera_power/149 max20303_mic_power/148 
+  Calls: 
+max20303_init/152 (max20303_init) @06c2e1c0
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) i2c/139 (write) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_read/143 MXC_I2C_SetRXThreshold/157 MXC_I2C_SetTXThreshold/156 MXC_I2C_SetFrequency/155 MXC_I2C_Init/154 
+max20303_gpio/151 (max20303_gpio) @06c2e000
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_read/143 MXC_Delay/153 reg_write/141 reg_write_buf/142 reg_read/143 reg_read/143 MXC_Delay/153 reg_write/141 reg_read/143 MXC_Delay/153 reg_write/141 reg_write_buf/142 
+max20303_sd_power/150 (max20303_sd_power) @06c22e00
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_read/143 MXC_Delay/153 reg_write/141 reg_write_buf/142 reg_read/143 reg_read/143 MXC_Delay/153 reg_write/141 reg_read/143 MXC_Delay/153 reg_write/141 reg_write_buf/142 
+max20303_camera_power/149 (max20303_camera_power) @06c22c40
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_read/143 MXC_Delay/153 reg_write/141 reg_write_buf/142 
+max20303_mic_power/148 (max20303_mic_power) @06c22a80
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_read/143 MXC_Delay/153 reg_write/141 reg_write_buf/142 
+max20303_led_blue/147 (max20303_led_blue) @06c228c0
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_write/141 
+max20303_led_green/146 (max20303_led_green) @06c22700
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_write/141 
+max20303_led_red/145 (max20303_led_red) @06c22540
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_write/141 
+max20303_led/144 (max20303_led) @06c22380
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_write/141 
+reg_read/143 (reg_read) @06c221c0
+  Type: function definition analyzed
+  Visibility:
+  References: i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: max20303_init/152 max20303_gpio/151 max20303_gpio/151 max20303_gpio/151 max20303_gpio/151 max20303_sd_power/150 max20303_sd_power/150 max20303_sd_power/150 max20303_sd_power/150 max20303_camera_power/149 max20303_mic_power/148 
+  Calls: i2c_flush/140 
+reg_write_buf/142 (reg_write_buf) @06c22000
+  Type: function definition analyzed
+  Visibility:
+  References: i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: max20303_gpio/151 max20303_gpio/151 max20303_sd_power/150 max20303_sd_power/150 max20303_camera_power/149 max20303_mic_power/148 
+  Calls: i2c_flush/140 
+reg_write/141 (reg_write) @06c05e00
+  Type: function definition analyzed
+  Visibility:
+  References: i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: max20303_gpio/151 max20303_gpio/151 max20303_gpio/151 max20303_sd_power/150 max20303_sd_power/150 max20303_sd_power/150 max20303_camera_power/149 max20303_mic_power/148 max20303_led_blue/147 max20303_led_green/146 max20303_led_red/145 max20303_led/144 
+  Calls: i2c_flush/140 
+i2c_flush/140 (i2c_flush) @06c05c40
+  Type: function definition analyzed
+  Visibility:
+  References: i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: reg_read/143 reg_write_buf/142 reg_write/141 
+  Calls: 
+i2c/139 (i2c) @06c04168
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: max20303_led/144 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) max20303_led_red/145 (read) max20303_led_green/146 (read) max20303_led_blue/147 (read) max20303_mic_power/148 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) max20303_camera_power/149 (read) max20303_sd_power/150 (read) max20303_gpio/151 (read) max20303_init/152 (read) max20303_init/152 (write) max20303_init/152 (read) max20303_init/152 (read) max20303_init/152 (read) max20303_init/152 (read) max20303_init/152 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+MXC_I2C_SetRXThreshold/157 (MXC_I2C_SetRXThreshold) @06c6d620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: max20303_init/152 
+  Calls: 
+MXC_I2C_SetTXThreshold/156 (MXC_I2C_SetTXThreshold) @06c6d540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: max20303_init/152 
+  Calls: 
+MXC_I2C_SetFrequency/155 (MXC_I2C_SetFrequency) @06c6d460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: max20303_init/152 
+  Calls: 
+MXC_I2C_Init/154 (MXC_I2C_Init) @06c6d2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: max20303_init/152 
+  Calls: 
+MXC_Delay/153 (MXC_Delay) @06c2ea80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: max20303_gpio/151 max20303_gpio/151 max20303_gpio/151 max20303_sd_power/150 max20303_sd_power/150 max20303_sd_power/150 max20303_camera_power/149 max20303_mic_power/148 
+  Calls: 
+max20303_init/152 (max20303_init) @06c2e1c0
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) i2c/139 (write) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_read/143 MXC_I2C_SetRXThreshold/157 MXC_I2C_SetTXThreshold/156 MXC_I2C_SetFrequency/155 MXC_I2C_Init/154 
+max20303_gpio/151 (max20303_gpio) @06c2e000
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_read/143 MXC_Delay/153 reg_write/141 reg_write_buf/142 reg_read/143 reg_read/143 MXC_Delay/153 reg_write/141 reg_read/143 MXC_Delay/153 reg_write/141 reg_write_buf/142 
+max20303_sd_power/150 (max20303_sd_power) @06c22e00
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_read/143 MXC_Delay/153 reg_write/141 reg_write_buf/142 reg_read/143 reg_read/143 MXC_Delay/153 reg_write/141 reg_read/143 MXC_Delay/153 reg_write/141 reg_write_buf/142 
+max20303_camera_power/149 (max20303_camera_power) @06c22c40
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_read/143 MXC_Delay/153 reg_write/141 reg_write_buf/142 
+max20303_mic_power/148 (max20303_mic_power) @06c22a80
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_read/143 MXC_Delay/153 reg_write/141 reg_write_buf/142 
+max20303_led_blue/147 (max20303_led_blue) @06c228c0
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_write/141 
+max20303_led_green/146 (max20303_led_green) @06c22700
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_write/141 
+max20303_led_red/145 (max20303_led_red) @06c22540
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_write/141 
+max20303_led/144 (max20303_led) @06c22380
+  Type: function definition analyzed
+  Visibility: public
+  References: i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: reg_write/141 
+reg_read/143 (reg_read) @06c221c0
+  Type: function definition analyzed
+  Visibility:
+  References: i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: max20303_init/152 max20303_gpio/151 max20303_gpio/151 max20303_gpio/151 max20303_gpio/151 max20303_sd_power/150 max20303_sd_power/150 max20303_sd_power/150 max20303_sd_power/150 max20303_camera_power/149 max20303_mic_power/148 
+  Calls: i2c_flush/140 
+reg_write_buf/142 (reg_write_buf) @06c22000
+  Type: function definition analyzed
+  Visibility:
+  References: i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: max20303_gpio/151 max20303_gpio/151 max20303_sd_power/150 max20303_sd_power/150 max20303_camera_power/149 max20303_mic_power/148 
+  Calls: i2c_flush/140 
+reg_write/141 (reg_write) @06c05e00
+  Type: function definition analyzed
+  Visibility:
+  References: i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: max20303_gpio/151 max20303_gpio/151 max20303_gpio/151 max20303_sd_power/150 max20303_sd_power/150 max20303_sd_power/150 max20303_camera_power/149 max20303_mic_power/148 max20303_led_blue/147 max20303_led_green/146 max20303_led_red/145 max20303_led/144 
+  Calls: i2c_flush/140 
+i2c_flush/140 (i2c_flush) @06c05c40
+  Type: function definition analyzed
+  Visibility:
+  References: i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) i2c/139 (read) 
+  Referring: 
+  Function flags: body
+  Called by: reg_read/143 reg_write_buf/142 reg_write/141 
+  Calls: 
+i2c/139 (i2c) @06c04168
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: max20303_led/144 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) reg_write/141 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) i2c_flush/140 (read) max20303_led_red/145 (read) max20303_led_green/146 (read) max20303_led_blue/147 (read) max20303_mic_power/148 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_write_buf/142 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) reg_read/143 (read) max20303_camera_power/149 (read) max20303_sd_power/150 (read) max20303_gpio/151 (read) max20303_init/152 (read) max20303_init/152 (write) max20303_init/152 (read) max20303_init/152 (read) max20303_init/152 (read) max20303_init/152 (read) max20303_init/152 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+i2c_flush/160 (i2c_flush) @06ad9540
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 159
+  References: i2c/139 (read) 
+  Referring: 
+  Function i2c_flush/160 is inline copy in reg_write_buf.constprop/158
+  Clone of i2c_flush/140
+  Availability: local
+  Function flags: count:118111600 (estimated locally) body local nonfreeing_fn
+  Called by: reg_write_buf.constprop.0/158 (inlined) (118111600 (estimated locally),0.98 per call) 
+  Calls: 
+i2c_flush/159 (i2c_flush) @06acd1c0
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 140
+  previous sharing asm name: 160
+  References: i2c/139 (read) 
+  Referring: 
+  Function i2c_flush/159 is inline copy in reg_write/141
+  Clone of i2c_flush/140
+  Availability: local
+  Function flags: count:118111600 (estimated locally) body local nonfreeing_fn
+  Called by: reg_write/141 (inlined) (118111600 (estimated locally),1.00 per call) 
+  Calls: 
+reg_write_buf.constprop.0/158 (reg_write_buf.constprop) @06ad58c0
+  Type: function definition analyzed
+  Visibility:
+  References: i2c/139 (read) 
+  Referring: 
+  Clone of reg_write_buf/142
+  Availability: local
+  Function flags: count:120632827 (estimated locally) local nonfreeing_fn
+  Called by: max20303_mic_power/148 (1068909985 (estimated locally),1.00 per call) max20303_camera_power/149 (1063970777 (estimated locally),0.99 per call) max20303_sd_power/150 (1063970777 (estimated locally),0.99 per call) max20303_sd_power/150 (32936578 (estimated locally),0.03 per call) max20303_gpio/151 (1026367362 (estimated locally),0.96 per call) max20303_gpio/151 (31772517 (estimated locally),0.03 per call) 
+  Calls: i2c_flush/160 (inlined) (118111600 (estimated locally),0.98 per call) 
+MXC_I2C_SetRXThreshold/157 (MXC_I2C_SetRXThreshold) @06c6d620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: max20303_init/152 (154892040 (estimated locally),0.14 per call) 
+  Calls: 
+MXC_I2C_SetTXThreshold/156 (MXC_I2C_SetTXThreshold) @06c6d540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: max20303_init/152 (154892040 (estimated locally),0.14 per call) 
+  Calls: 
+MXC_I2C_SetFrequency/155 (MXC_I2C_SetFrequency) @06c6d460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: max20303_init/152 (154892040 (estimated locally),0.14 per call) 
+  Calls: 
+MXC_I2C_Init/154 (MXC_I2C_Init) @06c6d2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: max20303_init/152 (316882244 (estimated locally),0.30 per call) 
+  Calls: 
+MXC_Delay/153 (MXC_Delay) @06c2ea80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: max20303_gpio/151 (7591262 (estimated locally),0.01 per call) max20303_gpio/151 (75962990 (estimated locally),0.07 per call) max20303_gpio/151 (245225270 (estimated locally),0.23 per call) max20303_sd_power/150 (7869386 (estimated locally),0.01 per call) max20303_sd_power/150 (78746075 (estimated locally),0.07 per call) max20303_sd_power/150 (254209683 (estimated locally),0.24 per call) max20303_camera_power/149 (254209683 (estimated locally),0.24 per call) max20303_mic_power/148 (255389785 (estimated locally),0.24 per call) 
+  Calls: 
+max20303_init/152 (max20303_init) @06c2e1c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: i2c/139 (read) i2c/139 (write) i2c/139 (read) i2c/139 (read) i2c/139 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: reg_read/143 (154892040 (estimated locally),0.14 per call) MXC_I2C_SetRXThreshold/157 (154892040 (estimated locally),0.14 per call) MXC_I2C_SetTXThreshold/156 (154892040 (estimated locally),0.14 per call) MXC_I2C_SetFrequency/155 (154892040 (estimated locally),0.14 per call) MXC_I2C_Init/154 (316882244 (estimated locally),0.30 per call) 
+max20303_gpio/151 (max20303_gpio) @06c2e000
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: i2c/139 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) body
+  Called by: 
+  Calls: reg_read/143 (7591262 (estimated locally),0.01 per call) MXC_Delay/153 (7591262 (estimated locally),0.01 per call) reg_write/141 (15530406 (estimated locally),0.01 per call) reg_write_buf.constprop.0/158 (31772517 (estimated locally),0.03 per call) reg_read/143 (48140177 (estimated locally),0.04 per call) reg_read/143 (75962990 (estimated locally),0.07 per call) MXC_Delay/153 (75962990 (estimated locally),0.07 per call) reg_write/141 (155407100 (estimated locally),0.14 per call) reg_read/143 (245225270 (estimated locally),0.23 per call) MXC_Delay/153 (245225270 (estimated locally),0.23 per call) reg_write/141 (501688363 (estimated locally),0.47 per call) reg_write_buf.constprop.0/158 (1026367362 (estimated locally),0.96 per call) 
+max20303_sd_power/150 (max20303_sd_power) @06c22e00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: i2c/139 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: reg_read/143 (7869386 (estimated locally),0.01 per call) MXC_Delay/153 (7869386 (estimated locally),0.01 per call) reg_write/141 (16099399 (estimated locally),0.01 per call) reg_write_buf.constprop.0/158 (32936578 (estimated locally),0.03 per call) reg_read/143 (49903907 (estimated locally),0.05 per call) reg_read/143 (78746075 (estimated locally),0.07 per call) MXC_Delay/153 (78746075 (estimated locally),0.07 per call) reg_write/141 (161100809 (estimated locally),0.15 per call) reg_read/143 (254209683 (estimated locally),0.24 per call) MXC_Delay/153 (254209683 (estimated locally),0.24 per call) reg_write/141 (520068912 (estimated locally),0.48 per call) reg_write_buf.constprop.0/158 (1063970777 (estimated locally),0.99 per call) 
+max20303_camera_power/149 (max20303_camera_power) @06c22c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: i2c/139 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: reg_read/143 (254209683 (estimated locally),0.24 per call) MXC_Delay/153 (254209683 (estimated locally),0.24 per call) reg_write/141 (520068912 (estimated locally),0.48 per call) reg_write_buf.constprop.0/158 (1063970777 (estimated locally),0.99 per call) 
+max20303_mic_power/148 (max20303_mic_power) @06c22a80
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: i2c/139 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: reg_read/143 (255389785 (estimated locally),0.24 per call) MXC_Delay/153 (255389785 (estimated locally),0.24 per call) reg_write/141 (522483197 (estimated locally),0.49 per call) reg_write_buf.constprop.0/158 (1068909985 (estimated locally),1.00 per call) 
+max20303_led_blue/147 (max20303_led_blue) @06c228c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: i2c/139 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn
+  Called by: 
+  Calls: reg_write/141 (1068909985 (estimated locally),1.00 per call) 
+max20303_led_green/146 (max20303_led_green) @06c22700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: i2c/139 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn
+  Called by: 
+  Calls: reg_write/141 (1068909985 (estimated locally),1.00 per call) 
+max20303_led_red/145 (max20303_led_red) @06c22540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: i2c/139 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn
+  Called by: 
+  Calls: reg_write/141 (1068909985 (estimated locally),1.00 per call) 
+max20303_led/144 (max20303_led) @06c22380
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: i2c/139 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn
+  Called by: 
+  Calls: reg_write/141 (1047531782 (estimated locally),0.98 per call) 
+reg_read/143 (reg_read) @06c221c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: i2c/139 (read) 
+  Referring: 
+  Availability: local
+  Function flags: count:118111600 (estimated locally) body local nonfreeing_fn
+  Called by: max20303_init/152 (154892040 (estimated locally),0.14 per call) max20303_gpio/151 (7591262 (estimated locally),0.01 per call) max20303_gpio/151 (48140177 (estimated locally),0.04 per call) max20303_gpio/151 (75962990 (estimated locally),0.07 per call) max20303_gpio/151 (245225270 (estimated locally),0.23 per call) max20303_sd_power/150 (7869386 (estimated locally),0.01 per call) max20303_sd_power/150 (49903907 (estimated locally),0.05 per call) max20303_sd_power/150 (78746075 (estimated locally),0.07 per call) max20303_sd_power/150 (254209683 (estimated locally),0.24 per call) max20303_camera_power/149 (254209683 (estimated locally),0.24 per call) max20303_mic_power/148 (255389785 (estimated locally),0.24 per call) 
+  Calls: i2c_flush/140 (inlined) (118111600 (estimated locally),1.00 per call) 
+reg_write_buf/142 (reg_write_buf) @06c22000
+  Type: function
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: count:120632827 (estimated locally) body
+  Called by: 
+  Calls: 
+reg_write/141 (reg_write) @06c05e00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: i2c/139 (read) 
+  Referring: 
+  Availability: local
+  Function flags: count:118111600 (estimated locally) body local nonfreeing_fn
+  Called by: max20303_gpio/151 (15530406 (estimated locally),0.01 per call) max20303_gpio/151 (155407100 (estimated locally),0.14 per call) max20303_gpio/151 (501688363 (estimated locally),0.47 per call) max20303_sd_power/150 (16099399 (estimated locally),0.01 per call) max20303_sd_power/150 (161100809 (estimated locally),0.15 per call) max20303_sd_power/150 (520068912 (estimated locally),0.48 per call) max20303_camera_power/149 (520068912 (estimated locally),0.48 per call) max20303_mic_power/148 (522483197 (estimated locally),0.49 per call) max20303_led_blue/147 (1068909985 (estimated locally),1.00 per call) max20303_led_green/146 (1068909985 (estimated locally),1.00 per call) max20303_led_red/145 (1068909985 (estimated locally),1.00 per call) max20303_led/144 (1047531782 (estimated locally),0.98 per call) 
+  Calls: i2c_flush/159 (inlined) (118111600 (estimated locally),1.00 per call) 
+i2c_flush/140 (i2c_flush) @06c05c40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  previous sharing asm name: 159
+  References: i2c/139 (read) 
+  Referring: 
+  Function i2c_flush/140 is inline copy in reg_read/143
+  Availability: local
+  Function flags: count:118111600 (estimated locally) body local nonfreeing_fn
+  Called by: reg_read/143 (inlined) (118111600 (estimated locally),1.00 per call) 
+  Calls: 
+i2c/139 (i2c) @06c04168
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: reg_write_buf.constprop.0/158 (read) max20303_led/144 (read) max20303_led_red/145 (read) max20303_led_green/146 (read) max20303_mic_power/148 (read) max20303_camera_power/149 (read) max20303_sd_power/150 (read) reg_read/143 (read) i2c_flush/140 (read) reg_write/141 (read) max20303_gpio/151 (read) max20303_led_blue/147 (read) max20303_init/152 (read) max20303_init/152 (write) max20303_init/152 (read) max20303_init/152 (read) max20303_init/152 (read) i2c_flush/159 (read) i2c_flush/160 (read) 
+  Availability: available
+  Varpool flags: initialized
+Materializing clones
+cloning reg_write_buf/142 to reg_write_buf.constprop/158
+   replace map: 0 -> 15
+    m_always_copy_start: 3
+    IPA adjusted parameters: 0. IPA_PARAM_OP_COPY , base_index: 1, prev_clone_index: 1
+                             1. IPA_PARAM_OP_COPY , base_index: 2, prev_clone_index: 2
+reg_write_buf (uint8_t reg, uint8_t * buf, int len)
+{
+  <bb 2> [local count: 120632827]:
+  # DEBUG BEGIN_STMT
+  if (len_18(D) > 6)
+    goto <bb 10>; [2.09%]
+  else
+    goto <bb 3>; [97.91%]
+
+  <bb 3> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  i2c_flush ();
+  # DEBUG BEGIN_STMT
+  i2c.31_1 = i2c;
+  i2c.31_1->fifo ={v} 80;
+  # DEBUG BEGIN_STMT
+  _2 ={v} i2c.31_1->mstctrl;
+  _3 = _2 | 1;
+  i2c.31_1->mstctrl ={v} _3;
+  # DEBUG BEGIN_STMT
+  _4 = (long unsigned int) reg_23(D);
+  i2c.31_1->fifo ={v} _4;
+  # DEBUG BEGIN_STMT
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 708421655]:
+  # DEBUG BEGIN_STMT
+  buf_29 = buf_13 + 1;
+  # DEBUG buf => buf_29
+  _5 = *buf_13;
+  _6 = (long unsigned int) _5;
+  i2c.31_1->fifo ={v} _6;
+
+  <bb 5> [local count: 826533255]:
+  # buf_13 = PHI <buf_25(D)(3), buf_29(4)>
+  # len_14 = PHI <len_18(D)(3), len_26(4)>
+  # DEBUG len => len_14
+  # DEBUG buf => buf_13
+  # DEBUG BEGIN_STMT
+  len_26 = len_14 + -1;
+  # DEBUG len => len_26
+  if (len_14 != 0)
+    goto <bb 4>; [85.71%]
+  else
+    goto <bb 6>; [14.29%]
+
+  <bb 6> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  _7 ={v} i2c.31_1->mstctrl;
+  _8 = _7 | 4;
+  i2c.31_1->mstctrl ={v} _8;
+  # DEBUG BEGIN_STMT
+
+  <bb 7> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _9 ={v} i2c.31_1->intfl0;
+  _10 = _9 & 64;
+  if (_10 == 0)
+    goto <bb 11>; [89.00%]
+  else
+    goto <bb 8>; [11.00%]
+
+  <bb 11> [local count: 955630224]:
+  goto <bb 7>; [100.00%]
+
+  <bb 8> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  i2c.31_1->intfl0 ={v} 64;
+  # DEBUG BEGIN_STMT
+  _11 ={v} i2c.31_1->intfl0;
+  _12 = _11 & 32512;
+  if (_12 != 0)
+    goto <bb 10>; [2.00%]
+  else
+    goto <bb 9>; [98.00%]
+
+  <bb 9> [local count: 115749368]:
+
+  <bb 10> [local count: 120632827]:
+  # _15 = PHI <-3(2), 0(9), -9(8)>
+  return _15;
+
+}
+
+
+reg_write_buf.constprop (uint8_t * buf, int len)
+{
+  uint8_t reg;
+
+  <bb 12> [local count: 120632827]:
+  # DEBUG reg => 15
+
+  <bb 2> [local count: 120632827]:
+  # DEBUG BEGIN_STMT
+  if (len_1(D) > 6)
+    goto <bb 11>; [2.09%]
+  else
+    goto <bb 3>; [97.91%]
+
+  <bb 3> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  i2c_flush ();
+  # DEBUG BEGIN_STMT
+  i2c.31_2 = i2c;
+  i2c.31_2->fifo ={v} 80;
+  # DEBUG BEGIN_STMT
+  _3 ={v} i2c.31_2->mstctrl;
+  _4 = _3 | 1;
+  i2c.31_2->mstctrl ={v} _4;
+  # DEBUG BEGIN_STMT
+  _5 = 15;
+  i2c.31_2->fifo ={v} _5;
+  # DEBUG BEGIN_STMT
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 708421655]:
+  # DEBUG BEGIN_STMT
+  buf_7 = buf_6 + 1;
+  # DEBUG buf => buf_7
+  _8 = *buf_6;
+  _9 = (long unsigned int) _8;
+  i2c.31_2->fifo ={v} _9;
+
+  <bb 5> [local count: 826533255]:
+  # buf_6 = PHI <buf_19(D)(3), buf_7(4)>
+  # len_10 = PHI <len_1(D)(3), len_11(4)>
+  # DEBUG len => len_10
+  # DEBUG buf => buf_6
+  # DEBUG BEGIN_STMT
+  len_11 = len_10 + -1;
+  # DEBUG len => len_11
+  if (len_10 != 0)
+    goto <bb 4>; [85.71%]
+  else
+    goto <bb 6>; [14.29%]
+
+  <bb 6> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  _12 ={v} i2c.31_2->mstctrl;
+  _13 = _12 | 4;
+  i2c.31_2->mstctrl ={v} _13;
+  # DEBUG BEGIN_STMT
+
+  <bb 7> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _14 ={v} i2c.31_2->intfl0;
+  _15 = _14 & 64;
+  if (_15 == 0)
+    goto <bb 8>; [89.00%]
+  else
+    goto <bb 9>; [11.00%]
+
+  <bb 8> [local count: 955630224]:
+  goto <bb 7>; [100.00%]
+
+  <bb 9> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  i2c.31_2->intfl0 ={v} 64;
+  # DEBUG BEGIN_STMT
+  _16 ={v} i2c.31_2->intfl0;
+  _17 = _16 & 32512;
+  if (_17 != 0)
+    goto <bb 11>; [2.00%]
+  else
+    goto <bb 10>; [98.00%]
+
+  <bb 10> [local count: 115749368]:
+
+  <bb 11> [local count: 120632827]:
+  # _18 = PHI <-3(2), -9(9), 0(10)>
+  return _18;
+
+}
+
+
+Materialization Call site updates done.
+
+Reclaiming functions: reg_write_buf/142
+Reclaiming variables:
+Clearing address taken flags:
+updating call of max20303_mic_power/148 -> reg_write_buf.constprop/158: err_11 = reg_write_buf (15, &buf, 2);
+    m_always_copy_start: 3
+    IPA adjusted parameters: 0. IPA_PARAM_OP_COPY , base_index: 1, prev_clone_index: 1
+                             1. IPA_PARAM_OP_COPY , base_index: 2, prev_clone_index: 2
+  updated to:err_11 = reg_write_buf.constprop (&buf, 2);
+updating call of max20303_camera_power/149 -> reg_write_buf.constprop/158: err_12 = reg_write_buf (15, &buf, 2);
+    m_always_copy_start: 3
+    IPA adjusted parameters: 0. IPA_PARAM_OP_COPY , base_index: 1, prev_clone_index: 1
+                             1. IPA_PARAM_OP_COPY , base_index: 2, prev_clone_index: 2
+  updated to:err_12 = reg_write_buf.constprop (&buf, 2);
+updating call of max20303_sd_power/150 -> reg_write_buf.constprop/158: err_36 = reg_write_buf (15, &buf, 1);
+    m_always_copy_start: 3
+    IPA adjusted parameters: 0. IPA_PARAM_OP_COPY , base_index: 1, prev_clone_index: 1
+                             1. IPA_PARAM_OP_COPY , base_index: 2, prev_clone_index: 2
+  updated to:err_36 = reg_write_buf.constprop (&buf, 1);
+updating call of max20303_sd_power/150 -> reg_write_buf.constprop/158: err_19 = reg_write_buf (15, &buf, 5);
+    m_always_copy_start: 3
+    IPA adjusted parameters: 0. IPA_PARAM_OP_COPY , base_index: 1, prev_clone_index: 1
+                             1. IPA_PARAM_OP_COPY , base_index: 2, prev_clone_index: 2
+  updated to:err_19 = reg_write_buf.constprop (&buf, 5);
+updating call of max20303_gpio/151 -> reg_write_buf.constprop/158: err_47 = reg_write_buf (15, &buf, 1);
+    m_always_copy_start: 3
+    IPA adjusted parameters: 0. IPA_PARAM_OP_COPY , base_index: 1, prev_clone_index: 1
+                             1. IPA_PARAM_OP_COPY , base_index: 2, prev_clone_index: 2
+  updated to:err_47 = reg_write_buf.constprop (&buf, 1);
+updating call of max20303_gpio/151 -> reg_write_buf.constprop/158: err_30 = reg_write_buf (15, &buf, 5);
+    m_always_copy_start: 3
+    IPA adjusted parameters: 0. IPA_PARAM_OP_COPY , base_index: 1, prev_clone_index: 1
+                             1. IPA_PARAM_OP_COPY , base_index: 2, prev_clone_index: 2
+  updated to:err_30 = reg_write_buf.constprop (&buf, 5);
+Trivially needed variables: i2c/139
+Removing variables:
+
+Final Symbol table:
+
+reg_write_buf.constprop.0/158 (reg_write_buf.constprop) @06ad58c0
+  Type: function definition analyzed
+  Visibility: asm_written section:.text.reg_write_buf.constprop.0 (implicit_section) artificial
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:120632827 (estimated locally) local nonfreeing_fn
+  Called by: 
+  Calls: 
+MXC_I2C_SetRXThreshold/157 (MXC_I2C_SetRXThreshold) @06c6d620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_I2C_SetTXThreshold/156 (MXC_I2C_SetTXThreshold) @06c6d540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_I2C_SetFrequency/155 (MXC_I2C_SetFrequency) @06c6d460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_I2C_Init/154 (MXC_I2C_Init) @06c6d2a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_Delay/153 (MXC_Delay) @06c2ea80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+max20303_init/152 (max20303_init) @06c2e1c0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.max20303_init (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+max20303_gpio/151 (max20303_gpio) @06c2e000
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.max20303_gpio (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally)
+  Called by: 
+  Calls: 
+max20303_sd_power/150 (max20303_sd_power) @06c22e00
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.max20303_sd_power (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+max20303_camera_power/149 (max20303_camera_power) @06c22c40
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.max20303_camera_power (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+max20303_mic_power/148 (max20303_mic_power) @06c22a80
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.max20303_mic_power (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+max20303_led_blue/147 (max20303_led_blue) @06c228c0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.max20303_led_blue (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn
+  Called by: 
+  Calls: 
+max20303_led_green/146 (max20303_led_green) @06c22700
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.max20303_led_green (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn
+  Called by: 
+  Calls: 
+max20303_led_red/145 (max20303_led_red) @06c22540
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.max20303_led_red (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn
+  Called by: 
+  Calls: 
+max20303_led/144 (max20303_led) @06c22380
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.max20303_led (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn
+  Called by: 
+  Calls: 
+reg_read/143 (reg_read) @06c221c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.reg_read (implicit_section)
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:118111600 (estimated locally) local nonfreeing_fn
+  Called by: 
+  Calls: 
+reg_write/141 (reg_write) @06c05e00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.text.reg_write (implicit_section)
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:118111600 (estimated locally) local nonfreeing_fn
+  Called by: 
+  Calls: 
+i2c/139 (i2c) @06c04168
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.bss.i2c (implicit_section)
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized

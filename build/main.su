@@ -1,0 +1,5 @@
+main.c:56:6:asciiart	48	static
+main.c:97:6:fail	8	static
+main.c:104:6:cnn_load_input	0	static
+main.c:117:6:capture_process_camera	40	static
+main.c:170:5:main	80	static

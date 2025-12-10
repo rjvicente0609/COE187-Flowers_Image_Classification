@@ -1,0 +1,4 @@
+set log_output to "flash.log"
+embedded:startup.tcl:28: Error: Can't find interface/C:analogcfs1.1.0Toolsopenocdshareopenocdscriptsinterface
+in procedure 'script' 
+at file "embedded:startup.tcl", line 28

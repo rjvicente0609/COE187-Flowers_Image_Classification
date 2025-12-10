@@ -1,0 +1,1726 @@
+Trivially needed symbols: LED_Toggle/145 LED_Off/144 LED_On/143 LED_Init/142
+
+
+Initial Symbol table:
+
+MXC_GPIO_OutToggle/152 (MXC_GPIO_OutToggle) @060b68c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: LED_Toggle/145 
+  Calls: 
+MXC_GPIO_OutSet/151 (MXC_GPIO_OutSet) @060b6700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: LED_Off/144 
+  Calls: 
+MXC_GPIO_OutClr/150 (MXC_GPIO_OutClr) @060b6540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: LED_On/143 
+  Calls: 
+mxc_assert/149 (mxc_assert) @060b6460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: LED_Toggle/145 LED_Off/144 LED_On/143 
+  Calls: 
+num_leds/148 (num_leds) @060ad5e8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: LED_Init/142 (read) LED_On/143 (read) LED_Off/144 (read) LED_Toggle/145 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+MXC_GPIO_Config/147 (MXC_GPIO_Config) @060b62a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: LED_Init/142 
+  Calls: 
+led_pin/146 (led_pin) @060ad558
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: LED_Init/142 (addr) LED_On/143 (read) LED_On/143 (read) LED_Off/144 (read) LED_Off/144 (read) LED_Toggle/145 (read) LED_Toggle/145 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+LED_Toggle/145 (LED_Toggle) @060b60e0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @019a7020
+  References: num_leds/148 (read) led_pin/146 (read) led_pin/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_OutToggle/152 mxc_assert/149 
+LED_Off/144 (LED_Off) @060aa700
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @060b60e0
+  References: num_leds/148 (read) led_pin/146 (read) led_pin/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: LED_Init/142 
+  Calls: MXC_GPIO_OutSet/151 mxc_assert/149 
+LED_On/143 (LED_On) @060aa2a0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @060aa700
+  References: num_leds/148 (read) led_pin/146 (read) led_pin/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_OutClr/150 mxc_assert/149 
+LED_Init/142 (LED_Init) @060aad20
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @060aa2a0
+  References: led_pin/146 (addr) num_leds/148 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_Config/147 LED_Off/144 
+MXC_SYS_In_Crit_Section/141 (MXC_SYS_In_Crit_Section) @0607c380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_SYS_Crit_Exit/140 (MXC_SYS_Crit_Exit) @0607c1c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_SYS_Crit_Enter/139 (MXC_SYS_Crit_Enter) @0607c000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_mxc_crit_get_state/138 (_mxc_crit_get_state) @0607ae00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_state/137 (_state) @06075678
+  Type: variable definition
+  Visibility:
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized
+ITM_CheckChar/136 (ITM_CheckChar) @06003a80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_ReceiveChar/135 (ITM_ReceiveChar) @060038c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_SendChar/134 (ITM_SendChar) @06003700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SysTick_Config/133 (SysTick_Config) @06003380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SCB_GetFPUType/132 (SCB_GetFPUType) @060031c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Load/131 (ARM_MPU_Load) @06003000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_OrderedMemcpy/130 (ARM_MPU_OrderedMemcpy) @05ffde00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegionEx/129 (ARM_MPU_SetRegionEx) @05ffdc40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegion/128 (ARM_MPU_SetRegion) @05ffda80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_ClrRegion/127 (ARM_MPU_ClrRegion) @05ffd8c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Disable/126 (ARM_MPU_Disable) @05ffd700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Enable/125 (ARM_MPU_Enable) @05ffd540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SystemReset/124 (__NVIC_SystemReset) @05fefd20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetVector/123 (__NVIC_GetVector) @05fefb60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetVector/122 (__NVIC_SetVector) @05fef9a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_DecodePriority/121 (NVIC_DecodePriority) @05fef7e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_EncodePriority/120 (NVIC_EncodePriority) @05fef620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriority/119 (__NVIC_GetPriority) @05fef460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriority/118 (__NVIC_SetPriority) @05fef2a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetActive/117 (__NVIC_GetActive) @05fef0e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_ClearPendingIRQ/116 (__NVIC_ClearPendingIRQ) @05fe9ee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPendingIRQ/115 (__NVIC_SetPendingIRQ) @05fe9d20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPendingIRQ/114 (__NVIC_GetPendingIRQ) @05fe9b60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_DisableIRQ/113 (__NVIC_DisableIRQ) @05fe99a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetEnableIRQ/112 (__NVIC_GetEnableIRQ) @05fe97e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_EnableIRQ/111 (__NVIC_EnableIRQ) @05fe9620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriorityGrouping/110 (__NVIC_GetPriorityGrouping) @05fe9460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriorityGrouping/109 (__NVIC_SetPriorityGrouping) @05fe92a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMMLA/108 (__SMMLA) @05fa5700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB/107 (__QSUB) @05fa5460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD/106 (__QADD) @05fa52a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SEL/105 (__SEL) @05fa50e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSLDX/104 (__SMLSLDX) @05f9dee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSLD/103 (__SMLSLD) @05f9dd20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSDX/102 (__SMLSDX) @05f9db60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSD/101 (__SMLSD) @05f9d9a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUSDX/100 (__SMUSDX) @05f9d7e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUSD/99 (__SMUSD) @05f9d620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLALDX/98 (__SMLALDX) @05f9d460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLALD/97 (__SMLALD) @05f9d2a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLADX/96 (__SMLADX) @05f9d0e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLAD/95 (__SMLAD) @05f96ee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUADX/94 (__SMUADX) @05f96d20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUAD/93 (__SMUAD) @05f96b60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTAB16_RORn/92 (__SXTAB16_RORn) @05f969a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTAB16/91 (__SXTAB16) @05f967e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTB16_RORn/90 (__SXTB16_RORn) @05f96620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTB16/89 (__SXTB16) @05f96460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UXTAB16/88 (__UXTAB16) @05f962a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UXTB16/87 (__UXTB16) @05f960e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USADA8/86 (__USADA8) @05f90d20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USAD8/85 (__USAD8) @05f90b60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSAX/84 (__UHSAX) @05f909a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSAX/83 (__UQSAX) @05f907e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USAX/82 (__USAX) @05f90620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSAX/81 (__SHSAX) @05f90460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSAX/80 (__QSAX) @05f902a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSAX/79 (__SSAX) @05f900e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHASX/78 (__UHASX) @05f89ee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQASX/77 (__UQASX) @05f89d20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UASX/76 (__UASX) @05f89b60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHASX/75 (__SHASX) @05f899a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QASX/74 (__QASX) @05f897e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SASX/73 (__SASX) @05f89620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSUB16/72 (__UHSUB16) @05f89460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSUB16/71 (__UQSUB16) @05f892a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USUB16/70 (__USUB16) @05f890e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSUB16/69 (__SHSUB16) @05f86ee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB16/68 (__QSUB16) @05f86d20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSUB16/67 (__SSUB16) @05f86b60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHADD16/66 (__UHADD16) @05f869a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQADD16/65 (__UQADD16) @05f867e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UADD16/64 (__UADD16) @05f86620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHADD16/63 (__SHADD16) @05f86460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD16/62 (__QADD16) @05f862a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SADD16/61 (__SADD16) @05f860e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSUB8/60 (__UHSUB8) @05f7cee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSUB8/59 (__UQSUB8) @05f7cd20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USUB8/58 (__USUB8) @05f7cb60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSUB8/57 (__SHSUB8) @05f7c9a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB8/56 (__QSUB8) @05f7c7e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSUB8/55 (__SSUB8) @05f7c620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHADD8/54 (__UHADD8) @05f7c460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQADD8/53 (__UQADD8) @05f7c2a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UADD8/52 (__UADD8) @05f7c0e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHADD8/51 (__SHADD8) @05f78ee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD8/50 (__QADD8) @05f78d20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SADD8/49 (__SADD8) @05f78b60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FPSCR/48 (__set_FPSCR) @05f789a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FPSCR/47 (__get_FPSCR) @05f787e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FAULTMASK/46 (__set_FAULTMASK) @05f78620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FAULTMASK/45 (__get_FAULTMASK) @05f78460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI_MAX/44 (__set_BASEPRI_MAX) @05f782a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI/43 (__set_BASEPRI) @05f780e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_BASEPRI/42 (__get_BASEPRI) @05f75ee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_fault_irq/41 (__disable_fault_irq) @05f75d20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_fault_irq/40 (__enable_fault_irq) @05f75b60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PRIMASK/39 (__set_PRIMASK) @05f759a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PRIMASK/38 (__get_PRIMASK) @05f757e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_MSP/37 (__set_MSP) @05f75620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_MSP/36 (__get_MSP) @05f75460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PSP/35 (__set_PSP) @05f752a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PSP/34 (__get_PSP) @05f750e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_xPSR/33 (__get_xPSR) @05f72ee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_APSR/32 (__get_APSR) @05f72d20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_IPSR/31 (__get_IPSR) @05f72b60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_CONTROL/30 (__set_CONTROL) @05f729a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_CONTROL/29 (__get_CONTROL) @05f727e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_irq/28 (__disable_irq) @05f72620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_irq/27 (__enable_irq) @05f72460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRT/26 (__STRT) @05f722a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRHT/25 (__STRHT) @05f720e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRBT/24 (__STRBT) @05f6cee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRT/23 (__LDRT) @05f6cd20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRHT/22 (__LDRHT) @05f6cb60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRBT/21 (__LDRBT) @05f6c9a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RRX/20 (__RRX) @05f6c7e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLREX/19 (__CLREX) @05f6c460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXW/18 (__STREXW) @05f6c2a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXH/17 (__STREXH) @05f6c0e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXB/16 (__STREXB) @05f64ee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXW/15 (__LDREXW) @05f64d20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXH/14 (__LDREXH) @05f64b60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXB/13 (__LDREXB) @05f649a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLZ/12 (__CLZ) @05f647e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RBIT/11 (__RBIT) @05f64620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ROR/10 (__ROR) @05f64460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REVSH/9 (__REVSH) @05f642a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV16/8 (__REV16) @05f640e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV/7 (__REV) @05f31ee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DMB/6 (__DMB) @05f31d20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DSB/5 (__DSB) @05f31b60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ISB/4 (__ISB) @05f319a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__cmsis_start/3 (__cmsis_start) @05f31540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_putchar_unlocked/2 (_putchar_unlocked) @05e8ca80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_getchar_unlocked/1 (_getchar_unlocked) @05e8c8c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__sputc_r/0 (__sputc_r) @05e8c540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+
+Removing unused symbols: MXC_SYS_In_Crit_Section/141 MXC_SYS_Crit_Exit/140 MXC_SYS_Crit_Enter/139 _mxc_crit_get_state/138 _state/137 ITM_CheckChar/136 ITM_ReceiveChar/135 ITM_SendChar/134 SysTick_Config/133 SCB_GetFPUType/132 ARM_MPU_Load/131 ARM_MPU_OrderedMemcpy/130 ARM_MPU_SetRegionEx/129 ARM_MPU_SetRegion/128 ARM_MPU_ClrRegion/127 ARM_MPU_Disable/126 ARM_MPU_Enable/125 __NVIC_SystemReset/124 __NVIC_GetVector/123 __NVIC_SetVector/122 NVIC_DecodePriority/121 NVIC_EncodePriority/120 __NVIC_GetPriority/119 __NVIC_SetPriority/118 __NVIC_GetActive/117 __NVIC_ClearPendingIRQ/116 __NVIC_SetPendingIRQ/115 __NVIC_GetPendingIRQ/114 __NVIC_DisableIRQ/113 __NVIC_GetEnableIRQ/112 __NVIC_EnableIRQ/111 __NVIC_GetPriorityGrouping/110 __NVIC_SetPriorityGrouping/109 __SMMLA/108 __QSUB/107 __QADD/106 __SEL/105 __SMLSLDX/104 __SMLSLD/103 __SMLSDX/102 __SMLSD/101 __SMUSDX/100 __SMUSD/99 __SMLALDX/98 __SMLALD/97 __SMLADX/96 __SMLAD/95 __SMUADX/94 __SMUAD/93 __SXTAB16_RORn/92 __SXTAB16/91 __SXTB16_RORn/90 __SXTB16/89 __UXTAB16/88 __UXTB16/87 __USADA8/86 __USAD8/85 __UHSAX/84 __UQSAX/83 __USAX/82 __SHSAX/81 __QSAX/80 __SSAX/79 __UHASX/78 __UQASX/77 __UASX/76 __SHASX/75 __QASX/74 __SASX/73 __UHSUB16/72 __UQSUB16/71 __USUB16/70 __SHSUB16/69 __QSUB16/68 __SSUB16/67 __UHADD16/66 __UQADD16/65 __UADD16/64 __SHADD16/63 __QADD16/62 __SADD16/61 __UHSUB8/60 __UQSUB8/59 __USUB8/58 __SHSUB8/57 __QSUB8/56 __SSUB8/55 __UHADD8/54 __UQADD8/53 __UADD8/52 __SHADD8/51 __QADD8/50 __SADD8/49 __set_FPSCR/48 __get_FPSCR/47 __set_FAULTMASK/46 __get_FAULTMASK/45 __set_BASEPRI_MAX/44 __set_BASEPRI/43 __get_BASEPRI/42 __disable_fault_irq/41 __enable_fault_irq/40 __set_PRIMASK/39 __get_PRIMASK/38 __set_MSP/37 __get_MSP/36 __set_PSP/35 __get_PSP/34 __get_xPSR/33 __get_APSR/32 __get_IPSR/31 __set_CONTROL/30 __get_CONTROL/29 __disable_irq/28 __enable_irq/27 __STRT/26 __STRHT/25 __STRBT/24 __LDRT/23 __LDRHT/22 __LDRBT/21 __RRX/20 __CLREX/19 __STREXW/18 __STREXH/17 __STREXB/16 __LDREXW/15 __LDREXH/14 __LDREXB/13 __CLZ/12 __RBIT/11 __ROR/10 __REVSH/9 __REV16/8 __REV/7 __DMB/6 __DSB/5 __ISB/4 __cmsis_start/3 _putchar_unlocked/2 _getchar_unlocked/1 __sputc_r/0
+
+Reclaimed Symbol table:
+
+MXC_GPIO_OutToggle/152 (MXC_GPIO_OutToggle) @060b68c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: LED_Toggle/145 
+  Calls: 
+MXC_GPIO_OutSet/151 (MXC_GPIO_OutSet) @060b6700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: LED_Off/144 
+  Calls: 
+MXC_GPIO_OutClr/150 (MXC_GPIO_OutClr) @060b6540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: LED_On/143 
+  Calls: 
+mxc_assert/149 (mxc_assert) @060b6460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: LED_Toggle/145 LED_Off/144 LED_On/143 
+  Calls: 
+num_leds/148 (num_leds) @060ad5e8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: LED_Init/142 (read) LED_On/143 (read) LED_Off/144 (read) LED_Toggle/145 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+MXC_GPIO_Config/147 (MXC_GPIO_Config) @060b62a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: LED_Init/142 
+  Calls: 
+led_pin/146 (led_pin) @060ad558
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: LED_Init/142 (addr) LED_On/143 (read) LED_On/143 (read) LED_Off/144 (read) LED_Off/144 (read) LED_Toggle/145 (read) LED_Toggle/145 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+LED_Toggle/145 (LED_Toggle) @060b60e0
+  Type: function definition analyzed
+  Visibility: public
+  References: num_leds/148 (read) led_pin/146 (read) led_pin/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_OutToggle/152 mxc_assert/149 
+LED_Off/144 (LED_Off) @060aa700
+  Type: function definition analyzed
+  Visibility: public
+  References: num_leds/148 (read) led_pin/146 (read) led_pin/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: LED_Init/142 
+  Calls: MXC_GPIO_OutSet/151 mxc_assert/149 
+LED_On/143 (LED_On) @060aa2a0
+  Type: function definition analyzed
+  Visibility: public
+  References: num_leds/148 (read) led_pin/146 (read) led_pin/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_OutClr/150 mxc_assert/149 
+LED_Init/142 (LED_Init) @060aad20
+  Type: function definition analyzed
+  Visibility: public
+  References: led_pin/146 (addr) num_leds/148 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_Config/147 LED_Off/144 
+
+
+Initial Symbol table:
+
+MXC_GPIO_OutToggle/152 (MXC_GPIO_OutToggle) @060b68c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: LED_Toggle/145 
+  Calls: 
+MXC_GPIO_OutSet/151 (MXC_GPIO_OutSet) @060b6700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: LED_Off/144 
+  Calls: 
+MXC_GPIO_OutClr/150 (MXC_GPIO_OutClr) @060b6540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: LED_On/143 
+  Calls: 
+mxc_assert/149 (mxc_assert) @060b6460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: LED_Toggle/145 LED_Off/144 LED_On/143 
+  Calls: 
+num_leds/148 (num_leds) @060ad5e8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: LED_Init/142 (read) LED_On/143 (read) LED_Off/144 (read) LED_Toggle/145 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+MXC_GPIO_Config/147 (MXC_GPIO_Config) @060b62a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: LED_Init/142 
+  Calls: 
+led_pin/146 (led_pin) @060ad558
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: LED_Init/142 (addr) LED_On/143 (read) LED_On/143 (read) LED_Off/144 (read) LED_Off/144 (read) LED_Toggle/145 (read) LED_Toggle/145 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+LED_Toggle/145 (LED_Toggle) @060b60e0
+  Type: function definition analyzed
+  Visibility: public
+  References: num_leds/148 (read) led_pin/146 (read) led_pin/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_OutToggle/152 mxc_assert/149 
+LED_Off/144 (LED_Off) @060aa700
+  Type: function definition analyzed
+  Visibility: public
+  References: num_leds/148 (read) led_pin/146 (read) led_pin/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: LED_Init/142 
+  Calls: MXC_GPIO_OutSet/151 mxc_assert/149 
+LED_On/143 (LED_On) @060aa2a0
+  Type: function definition analyzed
+  Visibility: public
+  References: num_leds/148 (read) led_pin/146 (read) led_pin/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_OutClr/150 mxc_assert/149 
+LED_Init/142 (LED_Init) @060aad20
+  Type: function definition analyzed
+  Visibility: public
+  References: led_pin/146 (addr) num_leds/148 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_Config/147 LED_Off/144 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+MXC_GPIO_OutToggle/152 (MXC_GPIO_OutToggle) @060b68c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: LED_Toggle/145 
+  Calls: 
+MXC_GPIO_OutSet/151 (MXC_GPIO_OutSet) @060b6700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: LED_Off/144 
+  Calls: 
+MXC_GPIO_OutClr/150 (MXC_GPIO_OutClr) @060b6540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: LED_On/143 
+  Calls: 
+mxc_assert/149 (mxc_assert) @060b6460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: LED_Toggle/145 LED_Off/144 LED_On/143 
+  Calls: 
+num_leds/148 (num_leds) @060ad5e8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: LED_Init/142 (read) LED_On/143 (read) LED_Off/144 (read) LED_Toggle/145 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+MXC_GPIO_Config/147 (MXC_GPIO_Config) @060b62a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: LED_Init/142 
+  Calls: 
+led_pin/146 (led_pin) @060ad558
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: LED_Init/142 (addr) LED_On/143 (read) LED_On/143 (read) LED_Off/144 (read) LED_Off/144 (read) LED_Toggle/145 (read) LED_Toggle/145 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+LED_Toggle/145 (LED_Toggle) @060b60e0
+  Type: function definition analyzed
+  Visibility: public
+  References: num_leds/148 (read) led_pin/146 (read) led_pin/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_OutToggle/152 mxc_assert/149 
+LED_Off/144 (LED_Off) @060aa700
+  Type: function definition analyzed
+  Visibility: public
+  References: num_leds/148 (read) led_pin/146 (read) led_pin/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: LED_Init/142 
+  Calls: MXC_GPIO_OutSet/151 mxc_assert/149 
+LED_On/143 (LED_On) @060aa2a0
+  Type: function definition analyzed
+  Visibility: public
+  References: num_leds/148 (read) led_pin/146 (read) led_pin/146 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_OutClr/150 mxc_assert/149 
+LED_Init/142 (LED_Init) @060aad20
+  Type: function definition analyzed
+  Visibility: public
+  References: led_pin/146 (addr) num_leds/148 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_Config/147 LED_Off/144 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+LED_Off/153 (LED_Off) @05f64460
+  Type: function definition analyzed
+  Visibility: public
+  next sharing asm name: 144
+  References: num_leds/148 (read) led_pin/146 (read) led_pin/146 (read) 
+  Referring: 
+  Function LED_Off/153 is inline copy in LED_Init/142
+  Clone of LED_Off/144
+  Availability: local
+  Function flags: count:955630225 (estimated locally) body local
+  Called by: LED_Init/142 (inlined) (955630225 (estimated locally),8.09 per call) 
+  Calls: mxc_assert/149 (315357973 (estimated locally),2.67 per call) MXC_GPIO_OutSet/151 (955630225 (estimated locally),8.09 per call) 
+MXC_GPIO_OutToggle/152 (MXC_GPIO_OutToggle) @060b68c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: LED_Toggle/145 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+MXC_GPIO_OutSet/151 (MXC_GPIO_OutSet) @060b6700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: LED_Off/153 (955630225 (estimated locally),8.09 per call) LED_Off/144 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+MXC_GPIO_OutClr/150 (MXC_GPIO_OutClr) @060b6540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: LED_On/143 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+mxc_assert/149 (mxc_assert) @060b6460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: LED_Off/153 (315357973 (estimated locally),2.67 per call) LED_Toggle/145 (354334800 (estimated locally),0.33 per call) LED_Off/144 (354334800 (estimated locally),0.33 per call) LED_On/143 (354334800 (estimated locally),0.33 per call) 
+  Calls: 
+num_leds/148 (num_leds) @060ad5e8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: LED_On/143 (read) LED_Off/144 (read) LED_Init/142 (read) LED_Toggle/145 (read) LED_Off/153 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+MXC_GPIO_Config/147 (MXC_GPIO_Config) @060b62a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: LED_Init/142 (955630225 (estimated locally),8.09 per call) 
+  Calls: 
+led_pin/146 (led_pin) @060ad558
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: LED_On/143 (read) LED_On/143 (read) LED_Off/144 (read) LED_Off/144 (read) LED_Init/142 (addr) LED_Toggle/145 (read) LED_Toggle/145 (read) LED_Off/153 (read) LED_Off/153 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+LED_Toggle/145 (LED_Toggle) @060b60e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: num_leds/148 (read) led_pin/146 (read) led_pin/146 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: MXC_GPIO_OutToggle/152 (1073741824 (estimated locally),1.00 per call) mxc_assert/149 (354334800 (estimated locally),0.33 per call) 
+LED_Off/144 (LED_Off) @060aa700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  previous sharing asm name: 153
+  References: num_leds/148 (read) led_pin/146 (read) led_pin/146 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: MXC_GPIO_OutSet/151 (1073741824 (estimated locally),1.00 per call) mxc_assert/149 (354334800 (estimated locally),0.33 per call) 
+LED_On/143 (LED_On) @060aa2a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: num_leds/148 (read) led_pin/146 (read) led_pin/146 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: MXC_GPIO_OutClr/150 (1073741824 (estimated locally),1.00 per call) mxc_assert/149 (354334800 (estimated locally),0.33 per call) 
+LED_Init/142 (LED_Init) @060aad20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: led_pin/146 (addr) num_leds/148 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:118111600 (estimated locally) body
+  Called by: 
+  Calls: MXC_GPIO_Config/147 (955630225 (estimated locally),8.09 per call) LED_Off/153 (inlined) (955630225 (estimated locally),8.09 per call) 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables:
+Removing variables:
+
+Final Symbol table:
+
+MXC_GPIO_OutToggle/152 (MXC_GPIO_OutToggle) @060b68c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_GPIO_OutSet/151 (MXC_GPIO_OutSet) @060b6700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_GPIO_OutClr/150 (MXC_GPIO_OutClr) @060b6540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+mxc_assert/149 (mxc_assert) @060b6460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+num_leds/148 (num_leds) @060ad5e8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+MXC_GPIO_Config/147 (MXC_GPIO_Config) @060b62a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+led_pin/146 (led_pin) @060ad558
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+LED_Toggle/145 (LED_Toggle) @060b60e0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.LED_Toggle (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+LED_Off/144 (LED_Off) @060aa700
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.LED_Off (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+LED_On/143 (LED_On) @060aa2a0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.LED_On (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+LED_Init/142 (LED_Init) @060aad20
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.LED_Init (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:118111600 (estimated locally)
+  Called by: 
+  Calls: 

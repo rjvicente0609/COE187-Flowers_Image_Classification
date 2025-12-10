@@ -1,0 +1,2556 @@
+Trivially needed symbols: cnn_disable/158 cnn_boost_disable/157 cnn_boost_enable/156 cnn_enable/155 cnn_unload/154 cnn_start/153 cnn_configure/152 cnn_init/151 cnn_load_bias/150 cnn_load_weights/147 memcpy32/145 cnn_stop/144 cnn_continue/143 CNN_ISR/142
+
+
+Initial Symbol table:
+
+MXC_SYS_ClockDisable/169 (MXC_SYS_ClockDisable) @06569ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_disable/158 
+  Calls: 
+MXC_GPIO_OutClr/168 (MXC_GPIO_OutClr) @06569d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_boost_disable/157 
+  Calls: 
+MXC_GPIO_OutSet/167 (MXC_GPIO_OutSet) @06569b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_boost_enable/156 
+  Calls: 
+MXC_GPIO_Config/166 (MXC_GPIO_Config) @06569a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_boost_disable/157 cnn_boost_enable/156 
+  Calls: 
+MXC_NVIC_SetVector/165 (MXC_NVIC_SetVector) @065698c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_enable/155 
+  Calls: 
+MXC_SYS_ClockEnable/164 (MXC_SYS_ClockEnable) @065697e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_enable/155 
+  Calls: 
+LED_On/163 (LED_On) @06569540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_start/153 
+  Calls: 
+MXC_TMR_SW_Start/162 (MXC_TMR_SW_Start) @06569460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_start/153 
+  Calls: 
+cnn_time/161 (cnn_time) @0635ce10
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CNN_ISR/142 (write) cnn_continue/143 (write) cnn_start/153 (write) 
+  Availability: not-ready
+  Varpool flags:
+MXC_TMR_SW_Stop/160 (MXC_TMR_SW_Stop) @0637db60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNN_ISR/142 
+  Calls: 
+LED_Off/159 (LED_Off) @0637da80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNN_ISR/142 
+  Calls: 
+cnn_disable/158 (cnn_disable) @0637d8c0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @019a7020
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_SYS_ClockDisable/169 
+cnn_boost_disable/157 (cnn_boost_disable) @0637d700
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @0637d8c0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_OutClr/168 MXC_GPIO_Config/166 
+cnn_boost_enable/156 (cnn_boost_enable) @0637d540
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @0637d700
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_OutSet/167 MXC_GPIO_Config/166 
+cnn_enable/155 (cnn_enable) @0637d380
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @0637d540
+  References: CNN_ISR/142 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_NVIC_SetVector/165 MXC_SYS_ClockEnable/164 
+cnn_unload/154 (cnn_unload) @0637d1c0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @0637d380
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+cnn_start/153 (cnn_start) @0637d000
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @0637d1c0
+  References: cnn_time/161 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: LED_On/163 MXC_TMR_SW_Start/162 
+cnn_configure/152 (cnn_configure) @0678be00
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @0637d000
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+cnn_init/151 (cnn_init) @0678bc40
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @0678be00
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+cnn_load_bias/150 (cnn_load_bias) @0678ba80
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @0678bc40
+  References: bias_0/148 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: memcpy_8to32/149 
+memcpy_8to32/149 (memcpy_8to32) @0678b8c0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @0678bc40
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: cnn_load_bias/150 
+  Calls: 
+bias_0/148 (bias_0) @0635c948
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @0678b8c0
+  References: 
+  Referring: cnn_load_bias/150 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+cnn_load_weights/147 (cnn_load_weights) @0678b380
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @0678ba80
+  References: kernels/146 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+kernels/146 (kernels) @0635c870
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @0678ba80
+  References: 
+  Referring: cnn_load_weights/147 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+memcpy32/145 (memcpy32) @06369e00
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @0678b380
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+cnn_stop/144 (cnn_stop) @06369c40
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06369e00
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+cnn_continue/143 (cnn_continue) @06369a80
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06369c40
+  References: cnn_time/161 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CNN_ISR/142 (CNN_ISR) @063698c0
+  Type: function definition analyzed
+  Visibility: public
+  Address is taken.
+  Aux: @06369a80
+  References: cnn_time/161 (write) 
+  Referring: cnn_enable/155 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: MXC_TMR_SW_Stop/160 LED_Off/159 
+MXC_SYS_In_Crit_Section/141 (MXC_SYS_In_Crit_Section) @06165620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_SYS_Crit_Exit/140 (MXC_SYS_Crit_Exit) @06165460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_SYS_Crit_Enter/139 (MXC_SYS_Crit_Enter) @061652a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_mxc_crit_get_state/138 (_mxc_crit_get_state) @061650e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_state/137 (_state) @06138e58
+  Type: variable definition
+  Visibility:
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized
+ITM_CheckChar/136 (ITM_CheckChar) @060e0ee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_ReceiveChar/135 (ITM_ReceiveChar) @060e0d20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_SendChar/134 (ITM_SendChar) @060e0b60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SysTick_Config/133 (SysTick_Config) @060e07e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SCB_GetFPUType/132 (SCB_GetFPUType) @060e0620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Load/131 (ARM_MPU_Load) @060e0460
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_OrderedMemcpy/130 (ARM_MPU_OrderedMemcpy) @060e02a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegionEx/129 (ARM_MPU_SetRegionEx) @060e00e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegion/128 (ARM_MPU_SetRegion) @060d6ee0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_ClrRegion/127 (ARM_MPU_ClrRegion) @060d6d20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Disable/126 (ARM_MPU_Disable) @060d6b60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Enable/125 (ARM_MPU_Enable) @060d69a0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SystemReset/124 (__NVIC_SystemReset) @060d61c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetVector/123 (__NVIC_GetVector) @060d6000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetVector/122 (__NVIC_SetVector) @060d1e00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_DecodePriority/121 (NVIC_DecodePriority) @060d1c40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_EncodePriority/120 (NVIC_EncodePriority) @060d1a80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriority/119 (__NVIC_GetPriority) @060d18c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriority/118 (__NVIC_SetPriority) @060d1700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetActive/117 (__NVIC_GetActive) @060d1540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_ClearPendingIRQ/116 (__NVIC_ClearPendingIRQ) @060d1380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPendingIRQ/115 (__NVIC_SetPendingIRQ) @060d11c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPendingIRQ/114 (__NVIC_GetPendingIRQ) @060d1000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_DisableIRQ/113 (__NVIC_DisableIRQ) @060c6e00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetEnableIRQ/112 (__NVIC_GetEnableIRQ) @060c6c40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_EnableIRQ/111 (__NVIC_EnableIRQ) @060c6a80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriorityGrouping/110 (__NVIC_GetPriorityGrouping) @060c68c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriorityGrouping/109 (__NVIC_SetPriorityGrouping) @060c6700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMMLA/108 (__SMMLA) @060717e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB/107 (__QSUB) @06071540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD/106 (__QADD) @06071380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SEL/105 (__SEL) @060711c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSLDX/104 (__SMLSLDX) @06071000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSLD/103 (__SMLSLD) @0606ee00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSDX/102 (__SMLSDX) @0606ec40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLSD/101 (__SMLSD) @0606ea80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUSDX/100 (__SMUSDX) @0606e8c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUSD/99 (__SMUSD) @0606e700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLALDX/98 (__SMLALDX) @0606e540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLALD/97 (__SMLALD) @0606e380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLADX/96 (__SMLADX) @0606e1c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMLAD/95 (__SMLAD) @0606e000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUADX/94 (__SMUADX) @06068e00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SMUAD/93 (__SMUAD) @06068c40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTAB16_RORn/92 (__SXTAB16_RORn) @06068a80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTAB16/91 (__SXTAB16) @060688c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTB16_RORn/90 (__SXTB16_RORn) @06068700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SXTB16/89 (__SXTB16) @06068540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UXTAB16/88 (__UXTAB16) @06068380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UXTB16/87 (__UXTB16) @060681c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USADA8/86 (__USADA8) @06060e00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USAD8/85 (__USAD8) @06060c40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSAX/84 (__UHSAX) @06060a80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSAX/83 (__UQSAX) @060608c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USAX/82 (__USAX) @06060700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSAX/81 (__SHSAX) @06060540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSAX/80 (__QSAX) @06060380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSAX/79 (__SSAX) @060601c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHASX/78 (__UHASX) @06060000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQASX/77 (__UQASX) @0605be00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UASX/76 (__UASX) @0605bc40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHASX/75 (__SHASX) @0605ba80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QASX/74 (__QASX) @0605b8c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SASX/73 (__SASX) @0605b700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSUB16/72 (__UHSUB16) @0605b540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSUB16/71 (__UQSUB16) @0605b380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USUB16/70 (__USUB16) @0605b1c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSUB16/69 (__SHSUB16) @0605b000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB16/68 (__QSUB16) @06056e00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSUB16/67 (__SSUB16) @06056c40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHADD16/66 (__UHADD16) @06056a80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQADD16/65 (__UQADD16) @060568c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UADD16/64 (__UADD16) @06056700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHADD16/63 (__SHADD16) @06056540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD16/62 (__QADD16) @06056380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SADD16/61 (__SADD16) @060561c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHSUB8/60 (__UHSUB8) @06056000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQSUB8/59 (__UQSUB8) @06052e00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__USUB8/58 (__USUB8) @06052c40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHSUB8/57 (__SHSUB8) @06052a80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QSUB8/56 (__QSUB8) @060528c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SSUB8/55 (__SSUB8) @06052700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UHADD8/54 (__UHADD8) @06052540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UQADD8/53 (__UQADD8) @06052380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__UADD8/52 (__UADD8) @060521c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SHADD8/51 (__SHADD8) @06052000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__QADD8/50 (__QADD8) @0604ee00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__SADD8/49 (__SADD8) @0604ec40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FPSCR/48 (__set_FPSCR) @0604ea80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FPSCR/47 (__get_FPSCR) @0604e8c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FAULTMASK/46 (__set_FAULTMASK) @0604e700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FAULTMASK/45 (__get_FAULTMASK) @0604e540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI_MAX/44 (__set_BASEPRI_MAX) @0604e380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI/43 (__set_BASEPRI) @0604e1c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_BASEPRI/42 (__get_BASEPRI) @0604e000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_fault_irq/41 (__disable_fault_irq) @06048e00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_fault_irq/40 (__enable_fault_irq) @06048c40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PRIMASK/39 (__set_PRIMASK) @06048a80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PRIMASK/38 (__get_PRIMASK) @060488c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_MSP/37 (__set_MSP) @06048700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_MSP/36 (__get_MSP) @06048540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PSP/35 (__set_PSP) @06048380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PSP/34 (__get_PSP) @060481c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_xPSR/33 (__get_xPSR) @06048000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_APSR/32 (__get_APSR) @06044e00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_IPSR/31 (__get_IPSR) @06044c40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_CONTROL/30 (__set_CONTROL) @06044a80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_CONTROL/29 (__get_CONTROL) @060448c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_irq/28 (__disable_irq) @06044700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_irq/27 (__enable_irq) @06044540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRT/26 (__STRT) @06044380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRHT/25 (__STRHT) @060441c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRBT/24 (__STRBT) @06044000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRT/23 (__LDRT) @06040e00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRHT/22 (__LDRHT) @06040c40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRBT/21 (__LDRBT) @06040a80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RRX/20 (__RRX) @060408c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLREX/19 (__CLREX) @06040540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXW/18 (__STREXW) @06040380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXH/17 (__STREXH) @060401c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXB/16 (__STREXB) @06040000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXW/15 (__LDREXW) @0603ae00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXH/14 (__LDREXH) @0603ac40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXB/13 (__LDREXB) @0603aa80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLZ/12 (__CLZ) @0603a8c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RBIT/11 (__RBIT) @0603a700
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ROR/10 (__ROR) @0603a540
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REVSH/9 (__REVSH) @0603a380
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV16/8 (__REV16) @0603a1c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV/7 (__REV) @0603a000
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DMB/6 (__DMB) @06002e00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DSB/5 (__DSB) @06002c40
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ISB/4 (__ISB) @06002a80
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__cmsis_start/3 (__cmsis_start) @06002620
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_putchar_unlocked/2 (_putchar_unlocked) @05fa6d20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+_getchar_unlocked/1 (_getchar_unlocked) @05fa6b60
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__sputc_r/0 (__sputc_r) @05fa67e0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+
+Removing unused symbols: MXC_SYS_In_Crit_Section/141 MXC_SYS_Crit_Exit/140 MXC_SYS_Crit_Enter/139 _mxc_crit_get_state/138 _state/137 ITM_CheckChar/136 ITM_ReceiveChar/135 ITM_SendChar/134 SysTick_Config/133 SCB_GetFPUType/132 ARM_MPU_Load/131 ARM_MPU_OrderedMemcpy/130 ARM_MPU_SetRegionEx/129 ARM_MPU_SetRegion/128 ARM_MPU_ClrRegion/127 ARM_MPU_Disable/126 ARM_MPU_Enable/125 __NVIC_SystemReset/124 __NVIC_GetVector/123 __NVIC_SetVector/122 NVIC_DecodePriority/121 NVIC_EncodePriority/120 __NVIC_GetPriority/119 __NVIC_SetPriority/118 __NVIC_GetActive/117 __NVIC_ClearPendingIRQ/116 __NVIC_SetPendingIRQ/115 __NVIC_GetPendingIRQ/114 __NVIC_DisableIRQ/113 __NVIC_GetEnableIRQ/112 __NVIC_EnableIRQ/111 __NVIC_GetPriorityGrouping/110 __NVIC_SetPriorityGrouping/109 __SMMLA/108 __QSUB/107 __QADD/106 __SEL/105 __SMLSLDX/104 __SMLSLD/103 __SMLSDX/102 __SMLSD/101 __SMUSDX/100 __SMUSD/99 __SMLALDX/98 __SMLALD/97 __SMLADX/96 __SMLAD/95 __SMUADX/94 __SMUAD/93 __SXTAB16_RORn/92 __SXTAB16/91 __SXTB16_RORn/90 __SXTB16/89 __UXTAB16/88 __UXTB16/87 __USADA8/86 __USAD8/85 __UHSAX/84 __UQSAX/83 __USAX/82 __SHSAX/81 __QSAX/80 __SSAX/79 __UHASX/78 __UQASX/77 __UASX/76 __SHASX/75 __QASX/74 __SASX/73 __UHSUB16/72 __UQSUB16/71 __USUB16/70 __SHSUB16/69 __QSUB16/68 __SSUB16/67 __UHADD16/66 __UQADD16/65 __UADD16/64 __SHADD16/63 __QADD16/62 __SADD16/61 __UHSUB8/60 __UQSUB8/59 __USUB8/58 __SHSUB8/57 __QSUB8/56 __SSUB8/55 __UHADD8/54 __UQADD8/53 __UADD8/52 __SHADD8/51 __QADD8/50 __SADD8/49 __set_FPSCR/48 __get_FPSCR/47 __set_FAULTMASK/46 __get_FAULTMASK/45 __set_BASEPRI_MAX/44 __set_BASEPRI/43 __get_BASEPRI/42 __disable_fault_irq/41 __enable_fault_irq/40 __set_PRIMASK/39 __get_PRIMASK/38 __set_MSP/37 __get_MSP/36 __set_PSP/35 __get_PSP/34 __get_xPSR/33 __get_APSR/32 __get_IPSR/31 __set_CONTROL/30 __get_CONTROL/29 __disable_irq/28 __enable_irq/27 __STRT/26 __STRHT/25 __STRBT/24 __LDRT/23 __LDRHT/22 __LDRBT/21 __RRX/20 __CLREX/19 __STREXW/18 __STREXH/17 __STREXB/16 __LDREXW/15 __LDREXH/14 __LDREXB/13 __CLZ/12 __RBIT/11 __ROR/10 __REVSH/9 __REV16/8 __REV/7 __DMB/6 __DSB/5 __ISB/4 __cmsis_start/3 _putchar_unlocked/2 _getchar_unlocked/1 __sputc_r/0
+
+Reclaimed Symbol table:
+
+MXC_SYS_ClockDisable/169 (MXC_SYS_ClockDisable) @06569ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_disable/158 
+  Calls: 
+MXC_GPIO_OutClr/168 (MXC_GPIO_OutClr) @06569d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_boost_disable/157 
+  Calls: 
+MXC_GPIO_OutSet/167 (MXC_GPIO_OutSet) @06569b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_boost_enable/156 
+  Calls: 
+MXC_GPIO_Config/166 (MXC_GPIO_Config) @06569a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_boost_disable/157 cnn_boost_enable/156 
+  Calls: 
+MXC_NVIC_SetVector/165 (MXC_NVIC_SetVector) @065698c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_enable/155 
+  Calls: 
+MXC_SYS_ClockEnable/164 (MXC_SYS_ClockEnable) @065697e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_enable/155 
+  Calls: 
+LED_On/163 (LED_On) @06569540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_start/153 
+  Calls: 
+MXC_TMR_SW_Start/162 (MXC_TMR_SW_Start) @06569460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_start/153 
+  Calls: 
+cnn_time/161 (cnn_time) @0635ce10
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CNN_ISR/142 (write) cnn_continue/143 (write) cnn_start/153 (write) 
+  Availability: not-ready
+  Varpool flags:
+MXC_TMR_SW_Stop/160 (MXC_TMR_SW_Stop) @0637db60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNN_ISR/142 
+  Calls: 
+LED_Off/159 (LED_Off) @0637da80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNN_ISR/142 
+  Calls: 
+cnn_disable/158 (cnn_disable) @0637d8c0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_SYS_ClockDisable/169 
+cnn_boost_disable/157 (cnn_boost_disable) @0637d700
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_OutClr/168 MXC_GPIO_Config/166 
+cnn_boost_enable/156 (cnn_boost_enable) @0637d540
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_OutSet/167 MXC_GPIO_Config/166 
+cnn_enable/155 (cnn_enable) @0637d380
+  Type: function definition analyzed
+  Visibility: public
+  References: CNN_ISR/142 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_NVIC_SetVector/165 MXC_SYS_ClockEnable/164 
+cnn_unload/154 (cnn_unload) @0637d1c0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+cnn_start/153 (cnn_start) @0637d000
+  Type: function definition analyzed
+  Visibility: public
+  References: cnn_time/161 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: LED_On/163 MXC_TMR_SW_Start/162 
+cnn_configure/152 (cnn_configure) @0678be00
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+cnn_init/151 (cnn_init) @0678bc40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+cnn_load_bias/150 (cnn_load_bias) @0678ba80
+  Type: function definition analyzed
+  Visibility: public
+  References: bias_0/148 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: memcpy_8to32/149 
+memcpy_8to32/149 (memcpy_8to32) @0678b8c0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: cnn_load_bias/150 
+  Calls: 
+bias_0/148 (bias_0) @0635c948
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: cnn_load_bias/150 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+cnn_load_weights/147 (cnn_load_weights) @0678b380
+  Type: function definition analyzed
+  Visibility: public
+  References: kernels/146 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+kernels/146 (kernels) @0635c870
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: cnn_load_weights/147 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+memcpy32/145 (memcpy32) @06369e00
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+cnn_stop/144 (cnn_stop) @06369c40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+cnn_continue/143 (cnn_continue) @06369a80
+  Type: function definition analyzed
+  Visibility: public
+  References: cnn_time/161 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CNN_ISR/142 (CNN_ISR) @063698c0
+  Type: function definition analyzed
+  Visibility: public
+  Address is taken.
+  References: cnn_time/161 (write) 
+  Referring: cnn_enable/155 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: MXC_TMR_SW_Stop/160 LED_Off/159 
+
+
+Initial Symbol table:
+
+MXC_SYS_ClockDisable/169 (MXC_SYS_ClockDisable) @06569ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_disable/158 
+  Calls: 
+MXC_GPIO_OutClr/168 (MXC_GPIO_OutClr) @06569d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_boost_disable/157 
+  Calls: 
+MXC_GPIO_OutSet/167 (MXC_GPIO_OutSet) @06569b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_boost_enable/156 
+  Calls: 
+MXC_GPIO_Config/166 (MXC_GPIO_Config) @06569a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_boost_disable/157 cnn_boost_enable/156 
+  Calls: 
+MXC_NVIC_SetVector/165 (MXC_NVIC_SetVector) @065698c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_enable/155 
+  Calls: 
+MXC_SYS_ClockEnable/164 (MXC_SYS_ClockEnable) @065697e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_enable/155 
+  Calls: 
+LED_On/163 (LED_On) @06569540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_start/153 
+  Calls: 
+MXC_TMR_SW_Start/162 (MXC_TMR_SW_Start) @06569460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_start/153 
+  Calls: 
+cnn_time/161 (cnn_time) @0635ce10
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CNN_ISR/142 (write) cnn_continue/143 (write) cnn_start/153 (write) 
+  Availability: not-ready
+  Varpool flags:
+MXC_TMR_SW_Stop/160 (MXC_TMR_SW_Stop) @0637db60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNN_ISR/142 
+  Calls: 
+LED_Off/159 (LED_Off) @0637da80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNN_ISR/142 
+  Calls: 
+cnn_disable/158 (cnn_disable) @0637d8c0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_SYS_ClockDisable/169 
+cnn_boost_disable/157 (cnn_boost_disable) @0637d700
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_OutClr/168 MXC_GPIO_Config/166 
+cnn_boost_enable/156 (cnn_boost_enable) @0637d540
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_OutSet/167 MXC_GPIO_Config/166 
+cnn_enable/155 (cnn_enable) @0637d380
+  Type: function definition analyzed
+  Visibility: public
+  References: CNN_ISR/142 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_NVIC_SetVector/165 MXC_SYS_ClockEnable/164 
+cnn_unload/154 (cnn_unload) @0637d1c0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+cnn_start/153 (cnn_start) @0637d000
+  Type: function definition analyzed
+  Visibility: public
+  References: cnn_time/161 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: LED_On/163 MXC_TMR_SW_Start/162 
+cnn_configure/152 (cnn_configure) @0678be00
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+cnn_init/151 (cnn_init) @0678bc40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+cnn_load_bias/150 (cnn_load_bias) @0678ba80
+  Type: function definition analyzed
+  Visibility: public
+  References: bias_0/148 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: memcpy_8to32/149 
+memcpy_8to32/149 (memcpy_8to32) @0678b8c0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: cnn_load_bias/150 
+  Calls: 
+bias_0/148 (bias_0) @0635c948
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: cnn_load_bias/150 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+cnn_load_weights/147 (cnn_load_weights) @0678b380
+  Type: function definition analyzed
+  Visibility: public
+  References: kernels/146 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+kernels/146 (kernels) @0635c870
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: cnn_load_weights/147 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+memcpy32/145 (memcpy32) @06369e00
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+cnn_stop/144 (cnn_stop) @06369c40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+cnn_continue/143 (cnn_continue) @06369a80
+  Type: function definition analyzed
+  Visibility: public
+  References: cnn_time/161 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CNN_ISR/142 (CNN_ISR) @063698c0
+  Type: function definition analyzed
+  Visibility: public
+  Address is taken.
+  References: cnn_time/161 (write) 
+  Referring: cnn_enable/155 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: MXC_TMR_SW_Stop/160 LED_Off/159 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+MXC_SYS_ClockDisable/169 (MXC_SYS_ClockDisable) @06569ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_disable/158 
+  Calls: 
+MXC_GPIO_OutClr/168 (MXC_GPIO_OutClr) @06569d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_boost_disable/157 
+  Calls: 
+MXC_GPIO_OutSet/167 (MXC_GPIO_OutSet) @06569b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_boost_enable/156 
+  Calls: 
+MXC_GPIO_Config/166 (MXC_GPIO_Config) @06569a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_boost_disable/157 cnn_boost_enable/156 
+  Calls: 
+MXC_NVIC_SetVector/165 (MXC_NVIC_SetVector) @065698c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_enable/155 
+  Calls: 
+MXC_SYS_ClockEnable/164 (MXC_SYS_ClockEnable) @065697e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_enable/155 
+  Calls: 
+LED_On/163 (LED_On) @06569540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_start/153 
+  Calls: 
+MXC_TMR_SW_Start/162 (MXC_TMR_SW_Start) @06569460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: cnn_start/153 
+  Calls: 
+cnn_time/161 (cnn_time) @0635ce10
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: CNN_ISR/142 (write) cnn_continue/143 (write) cnn_start/153 (write) 
+  Availability: not-ready
+  Varpool flags:
+MXC_TMR_SW_Stop/160 (MXC_TMR_SW_Stop) @0637db60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNN_ISR/142 
+  Calls: 
+LED_Off/159 (LED_Off) @0637da80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: CNN_ISR/142 
+  Calls: 
+cnn_disable/158 (cnn_disable) @0637d8c0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_SYS_ClockDisable/169 
+cnn_boost_disable/157 (cnn_boost_disable) @0637d700
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_OutClr/168 MXC_GPIO_Config/166 
+cnn_boost_enable/156 (cnn_boost_enable) @0637d540
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_GPIO_OutSet/167 MXC_GPIO_Config/166 
+cnn_enable/155 (cnn_enable) @0637d380
+  Type: function definition analyzed
+  Visibility: public
+  References: CNN_ISR/142 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: MXC_NVIC_SetVector/165 MXC_SYS_ClockEnable/164 
+cnn_unload/154 (cnn_unload) @0637d1c0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+cnn_start/153 (cnn_start) @0637d000
+  Type: function definition analyzed
+  Visibility: public
+  References: cnn_time/161 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: LED_On/163 MXC_TMR_SW_Start/162 
+cnn_configure/152 (cnn_configure) @0678be00
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+cnn_init/151 (cnn_init) @0678bc40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+cnn_load_bias/150 (cnn_load_bias) @0678ba80
+  Type: function definition analyzed
+  Visibility: public
+  References: bias_0/148 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: memcpy_8to32/149 
+memcpy_8to32/149 (memcpy_8to32) @0678b8c0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: cnn_load_bias/150 
+  Calls: 
+bias_0/148 (bias_0) @0635c948
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: cnn_load_bias/150 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+cnn_load_weights/147 (cnn_load_weights) @0678b380
+  Type: function definition analyzed
+  Visibility: public
+  References: kernels/146 (addr) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+kernels/146 (kernels) @0635c870
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: cnn_load_weights/147 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+memcpy32/145 (memcpy32) @06369e00
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+cnn_stop/144 (cnn_stop) @06369c40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+cnn_continue/143 (cnn_continue) @06369a80
+  Type: function definition analyzed
+  Visibility: public
+  References: cnn_time/161 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+CNN_ISR/142 (CNN_ISR) @063698c0
+  Type: function definition analyzed
+  Visibility: public
+  Address is taken.
+  References: cnn_time/161 (write) 
+  Referring: cnn_enable/155 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: MXC_TMR_SW_Stop/160 LED_Off/159 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+MXC_SYS_ClockDisable/169 (MXC_SYS_ClockDisable) @06569ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: cnn_disable/158 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+MXC_GPIO_OutClr/168 (MXC_GPIO_OutClr) @06569d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: cnn_boost_disable/157 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+MXC_GPIO_OutSet/167 (MXC_GPIO_OutSet) @06569b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: cnn_boost_enable/156 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+MXC_GPIO_Config/166 (MXC_GPIO_Config) @06569a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: cnn_boost_disable/157 (1073741824 (estimated locally),1.00 per call) cnn_boost_enable/156 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+MXC_NVIC_SetVector/165 (MXC_NVIC_SetVector) @065698c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: cnn_enable/155 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+MXC_SYS_ClockEnable/164 (MXC_SYS_ClockEnable) @065697e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: cnn_enable/155 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+LED_On/163 (LED_On) @06569540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: cnn_start/153 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+MXC_TMR_SW_Start/162 (MXC_TMR_SW_Start) @06569460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: cnn_start/153 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+cnn_time/161 (cnn_time) @0635ce10
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: CNN_ISR/142 (write) cnn_continue/143 (write) cnn_start/153 (write) 
+  Availability: not_available
+  Varpool flags:
+MXC_TMR_SW_Stop/160 (MXC_TMR_SW_Stop) @0637db60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CNN_ISR/142 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+LED_Off/159 (LED_Off) @0637da80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: CNN_ISR/142 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+cnn_disable/158 (cnn_disable) @0637d8c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: MXC_SYS_ClockDisable/169 (1073741824 (estimated locally),1.00 per call) 
+cnn_boost_disable/157 (cnn_boost_disable) @0637d700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: MXC_GPIO_OutClr/168 (1073741824 (estimated locally),1.00 per call) MXC_GPIO_Config/166 (1073741824 (estimated locally),1.00 per call) 
+cnn_boost_enable/156 (cnn_boost_enable) @0637d540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: MXC_GPIO_OutSet/167 (1073741824 (estimated locally),1.00 per call) MXC_GPIO_Config/166 (1073741824 (estimated locally),1.00 per call) 
+cnn_enable/155 (cnn_enable) @0637d380
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: CNN_ISR/142 (addr) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: MXC_NVIC_SetVector/165 (1073741824 (estimated locally),1.00 per call) MXC_SYS_ClockEnable/164 (1073741824 (estimated locally),1.00 per call) 
+cnn_unload/154 (cnn_unload) @0637d1c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn
+  Called by: 
+  Calls: 
+cnn_start/153 (cnn_start) @0637d000
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: cnn_time/161 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: LED_On/163 (1073741824 (estimated locally),1.00 per call) MXC_TMR_SW_Start/162 (1073741824 (estimated locally),1.00 per call) 
+cnn_configure/152 (cnn_configure) @0678be00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn
+  Called by: 
+  Calls: 
+cnn_init/151 (cnn_init) @0678bc40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn
+  Called by: 
+  Calls: 
+cnn_load_bias/150 (cnn_load_bias) @0678ba80
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: bias_0/148 (addr) 
+  Referring: 
+  Availability: available
+  Function flags: count:118111600 (estimated locally) body nonfreeing_fn
+  Called by: 
+  Calls: 
+bias_0/148 (bias_0) @0635c948
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: cnn_load_bias/150 (addr) 
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+cnn_load_weights/147 (cnn_load_weights) @0678b380
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: kernels/146 (addr) 
+  Referring: 
+  Availability: available
+  Function flags: count:14598063 (estimated locally) body nonfreeing_fn
+  Called by: 
+  Calls: 
+kernels/146 (kernels) @0635c870
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: cnn_load_weights/147 (addr) 
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+memcpy32/145 (memcpy32) @06369e00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:118111600 (estimated locally) body nonfreeing_fn
+  Called by: 
+  Calls: 
+cnn_stop/144 (cnn_stop) @06369c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn
+  Called by: 
+  Calls: 
+cnn_continue/143 (cnn_continue) @06369a80
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: cnn_time/161 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn
+  Called by: 
+  Calls: 
+CNN_ISR/142 (CNN_ISR) @063698c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Address is taken.
+  References: cnn_time/161 (write) 
+  Referring: cnn_enable/155 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body
+  Called by: 
+  Calls: MXC_TMR_SW_Stop/160 (1073741824 (estimated locally),1.00 per call) LED_Off/159 (1073741824 (estimated locally),1.00 per call) 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: bias_0/148 kernels/146
+Removing variables:
+
+Final Symbol table:
+
+MXC_SYS_ClockDisable/169 (MXC_SYS_ClockDisable) @06569ee0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_GPIO_OutClr/168 (MXC_GPIO_OutClr) @06569d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_GPIO_OutSet/167 (MXC_GPIO_OutSet) @06569b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_GPIO_Config/166 (MXC_GPIO_Config) @06569a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_NVIC_SetVector/165 (MXC_NVIC_SetVector) @065698c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_SYS_ClockEnable/164 (MXC_SYS_ClockEnable) @065697e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+LED_On/163 (LED_On) @06569540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+MXC_TMR_SW_Start/162 (MXC_TMR_SW_Start) @06569460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+cnn_time/161 (cnn_time) @0635ce10
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+MXC_TMR_SW_Stop/160 (MXC_TMR_SW_Stop) @0637db60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+LED_Off/159 (LED_Off) @0637da80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+cnn_disable/158 (cnn_disable) @0637d8c0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.cnn_disable (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+cnn_boost_disable/157 (cnn_boost_disable) @0637d700
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.cnn_boost_disable (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+cnn_boost_enable/156 (cnn_boost_enable) @0637d540
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.cnn_boost_enable (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+cnn_enable/155 (cnn_enable) @0637d380
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.cnn_enable (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+cnn_unload/154 (cnn_unload) @0637d1c0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.cnn_unload (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn
+  Called by: 
+  Calls: 
+cnn_start/153 (cnn_start) @0637d000
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.cnn_start (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+cnn_configure/152 (cnn_configure) @0678be00
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.cnn_configure (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn
+  Called by: 
+  Calls: 
+cnn_init/151 (cnn_init) @0678bc40
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.cnn_init (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn
+  Called by: 
+  Calls: 
+cnn_load_bias/150 (cnn_load_bias) @0678ba80
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.cnn_load_bias (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:118111600 (estimated locally) nonfreeing_fn
+  Called by: 
+  Calls: 
+bias_0/148 (bias_0) @0635c948
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.rodata.bias_0 (implicit_section)
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+cnn_load_weights/147 (cnn_load_weights) @0678b380
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.cnn_load_weights (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:14598063 (estimated locally) nonfreeing_fn
+  Called by: 
+  Calls: 
+kernels/146 (kernels) @0635c870
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written section:.rodata.kernels (implicit_section)
+  Aux: @0635c948
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+memcpy32/145 (memcpy32) @06369e00
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.memcpy32 (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:118111600 (estimated locally) nonfreeing_fn
+  Called by: 
+  Calls: 
+cnn_stop/144 (cnn_stop) @06369c40
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.cnn_stop (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn
+  Called by: 
+  Calls: 
+cnn_continue/143 (cnn_continue) @06369a80
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.cnn_continue (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn
+  Called by: 
+  Calls: 
+CNN_ISR/142 (CNN_ISR) @063698c0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public section:.text.CNN_ISR (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
